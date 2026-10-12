@@ -33,6 +33,14 @@
                         </td>
                     </tr>
                     <tr>
+                        <td><label for="manufacturerID">Manufacturer ID : </label></td>
+                        <td><input type="text" id="manufacturerID" name="manufacturerID" placeholder="Enter Manufacturer ID"><input type="button" value="Search"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="manufacturerName">Manufacturer Name : </label></td>
+                        <td><input type="text" id="manufacturerName" name="manufacturerName" placeholder="Enter Manufacturer Name"></td>
+                    </tr>
+                    <tr>
                         <td><label for="strength">Strength : </label></td>
                         <td><input type="text" id="strength" name="strength" placeholder="Enter Strength"></td>
                     </tr>
@@ -80,12 +88,13 @@
                     <tr>
                         <td><label for="status">Status : </label></td>
                         <td>
-                            <select name="" id="">
-                                <option value="" selected disabled>Select Status</option>
-                                <option value="">Active</option>
-                                <option value="">Inactive</option>
-                            </select>
+                            <input type="radio" name="status" id="status" value="Active">Active
+                            <input type="radio" name="status" id="status" value="Inactive">Inactive
                         </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit"></td>
                     </tr>
                 </table>
             </fieldset>
