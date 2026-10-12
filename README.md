@@ -2,6 +2,7 @@
 
 pharmacy-management/
 │
+
 ├── app/
 │   ├── Controllers/
 │   │   ├── AuthController.php
