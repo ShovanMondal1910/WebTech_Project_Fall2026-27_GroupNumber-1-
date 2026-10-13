@@ -6,7 +6,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     color: black;
-    background-color: aquamarine;
+    background-color: rgb(193, 241, 225);
     max-width: 720px;
     margin: 0 auto;
     padding: 30px 20px;
@@ -20,7 +20,7 @@ h1 {
 }
 
 fieldset {
-    background-color: #ffffff;
+    background-color: #f8f6f6;
     border: 2px solid rgb(201, 165, 165);
     border-radius: 10px;
     padding: 20px;
@@ -45,7 +45,7 @@ td {
     vertical-align: top;
 }
 
-#submit{
+#submit {
     padding: 8px 20px;
     background-color: #078b13;
     color: white;
@@ -55,7 +55,8 @@ td {
     margin: 0 5px;
     font-size: 16px;
 }
-#reset{
+
+#reset {
     padding: 8px 20px;
     background-color: #c01e1e;
     color: white;

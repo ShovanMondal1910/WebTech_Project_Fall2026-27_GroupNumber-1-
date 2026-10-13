@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Supplier</title>
+    <link rel="stylesheet" href="../design/style.css">
+</head>
+<body>
+    <form action="">
+        <h1>Add Supplier</h1>
+        <fieldset>
+            <legend>Supplier Information</legend>
+            <table>
+                <tr>
+                    <td><label for="supplierID">Supplier ID : </label></td>
+                    <td><input type="text" id="supplierID" name="supplierID" placeholder="Auto Generate"><input type="button" value="Generate ID"></td>
+                </tr>
+                <tr>
+                    <td><label for="supplierName">Supplier Name : </label></td>
+                    <td><input type="text" id="supplierName" name="supplierName" placeholder="Enter Supplier Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="contactPerson">Contact Person : </label></td>
+                    <td><input type="text" id="contactPerson" name="contactPerson" placeholder="Enter Contact Person"></td>
+                </tr>
+                <tr>
+                    <td><label for="phoneNumber">Phone Number : </label></td>
+                    <td><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email : </label></td>
+                    <td><input type="text" id="email" name="email" placeholder="Enter Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address : </label></td>
+                    <td><input type="text" id="address" name="address" placeholder="Enter Address"></td>
+                </tr>
+                <tr>
+                    <td><label for="notes">Notes : </label></td>
+                    <td><textarea name="notes" id="notes" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="status">Status : </label></td>
+                    <td><input type="radio" name="status" id="status" value="Active"><label for="status">Active</label><input type="radio" name="status" id="status" value="Inactive"><label for="status">Inactive</label></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset" id="reset" value="Reset">
+    </form>
+</body>
+</html>
