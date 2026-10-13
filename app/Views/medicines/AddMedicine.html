@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../design/style.css">
 </head>
     <body>
         <h1>Add Medicine</h1>
@@ -90,14 +91,16 @@
                         <td>
                             <input type="radio" name="status" id="status" value="Active">Active
                             <input type="radio" name="status" id="status" value="Inactive">Inactive
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" value="Submit"></td>
+                        </td> 
                     </tr>
                 </table>
             </fieldset>
+            <table>
+                <tr>
+                    <td><input type="submit" value="Submit" id="submit"></td>
+                    <td><input type="reset" value="Reset" id="reset"></td>
+                </tr>
+            </table>
         </form>
     </body> 
 </html>
