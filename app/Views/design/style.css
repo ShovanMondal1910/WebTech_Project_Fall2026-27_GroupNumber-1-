@@ -1,7 +1,8 @@
-*{
+* {
     box-sizing: content-box;
 }
-body{
+
+body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     color: black;
@@ -10,31 +11,57 @@ body{
     margin: 0 auto;
     padding: 30px 20px;
 }
-h1{
+
+h1 {
     text-align: center;
     border: 1px solid blue;
     padding: 6px;
     border-radius: 10px;
 }
-fieldset{
-    background-color:  #ffffff;
+
+fieldset {
+    background-color: #ffffff;
     border: 2px solid rgb(201, 165, 165);
     border-radius: 10px;
     padding: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-legend{
+
+legend {
     background-color: bisque;
     border: 2px solid rgb(182, 162, 162);
     padding: 6px;
     border-radius: 10px;
 }
-table{
+
+table {
     width: 100%;
     border-collapse: collapse;
 }
-td{
+
+td {
     padding: 8px 6px;
     vertical-align: top;
+}
+
+#submit{
+    padding: 8px 20px;
+    background-color: #078b13;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 16px;
+}
+#reset{
+    padding: 8px 20px;
+    background-color: #c01e1e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 16px;
 }

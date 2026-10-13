@@ -15,11 +15,15 @@
                 <table>
                     <tr>
                         <td><label for="medicineID">Medicine ID : </label></td>
-                        <td><input type="text" id="medicineID" name="medicineID" placeholder="Generated ID"></td>
+                        <td><input type="text" id="medicineID" name="medicineID" placeholder="Generated ID"><input type="button" value="Generate ID"></td>
                     </tr>
                     <tr>
                         <td><label for="medicineName">Medicine Name : </label></td>
                         <td><input type="text" id="medicineName" name="medicineName" placeholder="Enter Medicine Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="brandName">Brand Name : </label></td>
+                        <td><input type="text" id="brandName" name="brandName" placeholder="Enter Brand Name"></td>
                     </tr>
                     <tr>
                         <td><label for="genericName">Generic Name : </label></td>
@@ -68,19 +72,104 @@
                     </tr>
                     <tr>
                         <td><label for="unitName">Unit Name : </label></td>
-                        <td><input type="text" id="unitName" name="unitName" placeholder="Enter Unit Name"></td>
-                    </tr>
+                        <td><select name="" id="">
+                            <option value="" selected disabled>Select Unit Name</option>
+                            <option value="">Pc</option>
+                            <option value="">Box</option>
+                            <option value="">Strip</option>
+                            <option value="">Gm</option>
+                            <option value="">Ml</option>
+                            <option value="">IU</option>
+                            <option value="">mg</option>
+                            <option value="">mcg</option>
+                            <option value="">L</option>
+                            <option value="">ml</option>
+                            <option value="">Pcs</option>
+                            <option value="">Bags</option>
+                            <option value="">Pouch</option>
+                            <option value="">Pots</option>
+                        </select></td>
+                    </tr>                  
                     <tr>
                         <td><label for="barcode">Barcode : </label></td>
-                        <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode"></td>
+                        <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode"><input type="button" value="Generate Barcode"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <!-- 
+            <fieldset>
+                <legend>Pricing Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="purchasePrice">Purchase Price : </label></td>
+                        <td><input type="number" id="purchasePrice" name="purchasePrice" placeholder="Enter Purchase Price"></td>
                     </tr>
                     <tr>
-                        <td><label for="prescriptionRequired">Prescription Required : </label></td>
-                        <td><input type="checkbox" id="prescriptionRequired" name="prescriptionRequired"></td>
+                        <td><label for="sellingPrice">Selling Price : </label></td>
+                        <td><input type="number" id="sellingPrice" name="sellingPrice" placeholder="Enter Selling Price"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="discount">Discount Allowed (%) : </label></td>
+                        <td><input type="number" id="discount" name="discount" placeholder="Enter Discount"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mrp">MRP (Tk) : </label></td>
+                        <td><input type="number" id="mrp" name="mrp" placeholder="Enter MRP"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vat">Tax Rate (%) : </label></td>
+                        <td><input type="number" id="vat" name="vat" placeholder="Enter VAT"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vatAmount">Tax Amount (Tk) : </label></td>
+                        <td><input type="number" id="vatAmount" name="vatAmount" placeholder="Enter VAT Amount"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Stock & Expiry</legend>
+                <table>
+                    <tr>
+                        <td><label for="initialStock">Initial Stock : </label></td>
+                        <td><input type="number" id="initialStock" name="initialStock" placeholder="Enter Initial Stock"></td>
                     </tr>
                     <tr>
                         <td><label for="reorderLevel">Reorder Level : </label></td>
                         <td><input type="number" id="reorderLevel" name="reorderLevel" placeholder="Enter Reorder Level"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="batchNo">Batch Number : </label></td>
+                        <td><input type="text" id="batchNo" name="batchNo" placeholder="Enter Batch Number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="manufactureDate">Manufacture Date : </label></td>
+                        <td><input type="date" id="manufactureDate" name="manufactureDate" placeholder="Enter Manufacture Date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="expiryDate">Expiry Date : </label></td>
+                        <td><input type="date" id="expiryDate" name="expiryDate" placeholder="Enter Expiry Date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="supplierID">Supplier ID : </label></td>
+                        <td><input type="text" id="supplierID" name="supplierID" placeholder="Enter Supplier ID"> <input type="button" value="Search"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="supplierName">Supplier Name : </label></td>
+                        <td><input type="text" id="supplierName" name="supplierName" placeholder="Enter Supplier Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="storageCondition">Storage Instraction : </label></td>
+                        <td><input type="text" id="storageCondition" name="storageCondition" placeholder="Enter Storage Condition"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Medicine Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="prescriptionRequired">Prescription Required : </label></td>
+                        <td><input type="checkbox" id="prescriptionRequired" name="prescriptionRequired">Yes</td>
                     </tr>
                     <tr>
                         <td><label for="description">Description : </label></td>
@@ -95,6 +184,7 @@
                     </tr>
                 </table>
             </fieldset>
+            -->
             <table>
                 <tr>
                     <td><input type="submit" value="Submit" id="submit"></td>
