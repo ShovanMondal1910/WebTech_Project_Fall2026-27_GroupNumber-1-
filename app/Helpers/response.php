@@ -1,0 +1,3 @@
+﻿<?php
+
+// Response helpers
