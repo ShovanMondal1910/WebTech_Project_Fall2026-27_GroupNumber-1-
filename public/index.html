@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="us">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Login</title>
 </head>
 <body>
-    <form action="">
-        <h1>Welcome Back</h1>
-        
+    <img src="assets/images/logo.png" id="logo" alt="Logo">
+    <br>
+
+    <h1>Login</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>User Login</legend>
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#">Forgot password?</a>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <div class="button-group">
+            <input type="submit" id="submit" value="Login">
+            <input type="reset" id="reset" value="Reset">
+        </div>
+        <br>
+
+        <div style="text-align: center;">
+            <span>New Here? <a href="signup.html">Create an Account</a></span>
+        </div>
     </form>
 </body>
 </html>
