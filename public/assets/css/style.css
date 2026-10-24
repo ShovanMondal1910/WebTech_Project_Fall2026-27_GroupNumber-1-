@@ -67,6 +67,7 @@ textarea {
     width: 90%;
     padding: 8px 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
     border: 1px solid;
     border-radius: 5px;
     border-color: rgb(168, 66, 66);
