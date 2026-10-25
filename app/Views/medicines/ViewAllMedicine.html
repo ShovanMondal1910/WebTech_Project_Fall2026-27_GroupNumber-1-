@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Medicine</title>
+    <link rel="stylesheet" href="../design/css/viewallmedicine.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Search Medicine</legend>
+            <div>
+                <table>
+                    <tr>
+                        <label for="search" class="searchHeading">Search Medicine</label>
+                        <input type="text" name="search" id="search" placeholder="Search by Medicine Barcode/Name/ID"
+                            required>
+                        <input type="submit" value="Search">
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </form>
+    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Medicine ID</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Generic Name</th>
+                <th>Category</th>
+                <th>Barcode</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+</body>
+
+</html>
