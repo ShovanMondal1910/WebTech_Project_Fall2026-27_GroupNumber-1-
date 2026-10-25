@@ -23,6 +23,7 @@ Admin:
     dob,
     gender,
     phone,
+    address,
     designation
     
 Stuff:
