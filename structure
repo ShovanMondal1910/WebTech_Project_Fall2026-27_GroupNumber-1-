@@ -1,3 +1,9 @@
+
+Medicine Managment System
+
+User -> Customer, Admin, Stuff
+
+
 User:
     userId(PK)
     username,
