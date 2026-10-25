@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Customer</title>
-</head>
-<body>
-        
-</body>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../design/css/common.css"> 
+        <title> Customer Registration Form </title>
+    </head>
+    <body>
+        <img src="../design/images/logo.png" id="logo" alt="Logo"> 
+        <br>
+
+        <h1> Customer Registration Form </h1>
+        <form>
+            <fieldset>
+                <legend> Customer Personal Information </legend>
+               <table>
+                <tr>
+                    <td> <label for="CustomerName"> Customer Name :  </label> </td>
+                    <td> <input type="text" name="CustomerName" id="CustomerName" for="CustomerName" placeholder="Enter Your Name" required> </td>
+                </tr>
+
+               <tr> 
+                    <td> <label for="DOB"> DOB : </label></td>
+                    <td> <input type ="date" name ="DOB" id="DOB" for="DOB"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="CustomerGender"> Gender : </label></td>
+                    <td> <input type="radio" name="gender" id="Male" for="Gender"> Male <input type="radio" name="gender" id="Female" for="Gender"> Female </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="CustomerPhone"> Customer Phone : </label></td>
+                    <td> <input type="number" name="CustomerPhone" id="CustomerPhone" for="CustomerPhone" placeholder="Enter Your Phone "> </td>
+                </tr>
+                
+                <tr> 
+                    <td> <label for="Address"> Address : </label></td>
+                    <td> 
+                        <textarea id="Address" for="Address" cols="20" rows="5" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td> <label for="PatientDoc"> Medical History : </label></td>
+                    <td> <input type ="file" name ="file" id="medicaldoc" for="medicaldoc"> </td>
+                </tr>
+
+                <tr>
+                    <td><label for="Citizen"> Citizenship : </label> </td>
+                    <td>
+                        <select name="Citizen" id="Citizen" for="Citizen">
+                            <option id="blank"> Select Country </option>
+                            <option id="BD"> Bangladesh </option>
+                            <option id="IND"> India </option>
+                            <option id="PAK"> Pakistan </option>
+                            <option id="USA"> USA </option>
+                            <option id ="UK"> UK </option>
+                            <option id="AUS"> Australia </option>
+                            <option id="JP"> Japan </option>
+                            <option id="CN"> China </option>
+                            <option id="MB"> Myanmar </option>
+                            <option id="SA"> Saudi Arabia </option>
+                            <option id="SG"> Singapore </option>
+                            <option id="TH"> Thailand </option>
+                            <option id="CA"> Canada </option>
+                            <option id="FR"> France </option>
+                            <option id="DE"> Germany </option>
+                            <option id="KR"> South Korea </option>
+                            <option id="MAL"> Malaysia </option>
+                            <option id="UAE"> UAE </option>
+                        </select>
+                    </td>
+                </tr>
+               </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> User Credentials </legend>
+                <table>
+                    <tr>
+                        <td> <label for="username"> User Name: </label> </td>
+                        <td> <input type="text" id="username" for="username" placeholder="Enter username"> </td>
+                    </tr>
+                    <tr>
+                        <td>  <label for="email"> Email : </label> </td>
+                        <td> <input type="email" name="email" id="email" for="email" placeholder="Enter Your Email "> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="password"> Password: </label></td>
+                        <td> <input type="password" id="password" for="password" placeholder="Enter user password"></td>
+
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+
+            <div class="button-group">
+                <input type="submit" id="submit" value="Create Customer">
+                <input type="reset" id="reset" value="Reset">
+            </div>
+        </form>
+    </body>
 </html>

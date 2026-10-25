@@ -1,0 +1,39 @@
+User:
+    userId(PK)
+    username,
+    email,
+    password,
+    userRole
+
+Customer:    
+    customerId(PK),
+    userId(FK),
+    name,
+    dob,
+    gender,
+    phone,
+    address,
+    medicalHistory,
+    citizenship
+
+Admin:
+    adminId(PK),
+    userId(FK),
+    name,
+    dob,
+    gender,
+    phone,
+    designation
+    
+Stuff:
+    stuffId(PK),
+    userId(FK),
+    name,
+    dob,
+    gender,
+    phone,
+    department,
+    designation,
+    shift,
+    salary
+
