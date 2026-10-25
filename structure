@@ -38,3 +38,49 @@ Stuff:
     shift,
     salary
 
+Medicine:
+    medicineID (PK),
+    name,
+    image,
+    brand,
+    genericName,
+    category,
+    manufacturerID (FK),
+    strength,
+    dosageForm,
+    unitName,
+    barcode,
+
+    purchasePrice,
+    sellingPrice,
+    discount,
+    vat,
+
+    stock,
+    reorderLevel,
+    batchNo,
+    manufactureDate,
+    expiryDate,
+    supplierID (FK),
+    storageInstruction,
+
+    prescriptionRequired,
+    description,
+    status
+    
+
+Manufacturer:
+    manufacturerID (PK),
+    name,
+    address,
+    phone,
+    email
+
+Supplier:
+    supplierID (PK),
+    name,
+    contactPerson,
+    phone,
+    email,
+    address,
+    status

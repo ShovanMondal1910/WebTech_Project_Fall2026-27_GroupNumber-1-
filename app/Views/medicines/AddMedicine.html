@@ -23,6 +23,10 @@
                         <td><input type="text" id="medicineName" name="medicineName" placeholder="Enter Medicine Name"></td>
                     </tr>
                     <tr>
+                        <td><label for="image">Image : </label></td>
+                        <td><input type="file" id="image" name="image" placeholder="Upload Image"></td>
+                    </tr>
+                    <tr>
                         <td><label for="brandName">Brand Name : </label></td>
                         <td><input type="text" id="brandName" name="brandName" placeholder="Enter Brand Name"></td>
                     </tr>
@@ -34,7 +38,26 @@
                         <td><label for="category">Category : </label></td>
                         <td>
                             <select name="" id="">
-                                <option value="" selected disabled>Select Category</option>
+                                <option value="Select Category">Select Category</option>
+                                <option value="Antibiotics">Antibiotics</option>   
+                                <option value="Antifungal">Antifungal</option>
+                                <option value="Antipyretic">Antipyretic</option>
+                                <option value="Antiseptic">Antiseptic</option>
+                                <option value="Analgesics">Analgesics</option>
+                                <option value="Anti-inflammatory">Anti-inflammatory</option>
+                                <option value="Antacids">Antacids</option>
+                                <option value="Antihistamines">Antihistamines</option>
+                                <option value="Antiparasitics">Antiparasitics</option>
+                                <option value="Antivirals">Antivirals</option>
+                                <option value="Anticancer">Anticancer</option>
+                                <option value="Cardiovascular">Cardiovascular</option>
+                                <option value="CNS Agents">CNS Agents</option>
+                                <option value="Respiratory">Respiratory</option>
+                                <option value="Metabolic">Metabolic</option>
+                                <option value="Vitamins">Vitamins</option>
+                                <option value="Minerals">Minerals</option>
+                                <option value="Supplements">Supplements</option>
+                                <option value="Others">Others</option>
                             </select>
                         </td>
                     </tr>
@@ -75,20 +98,18 @@
                         <td><label for="unitName">Unit Name : </label></td>
                         <td><select name="" id="">
                             <option value="" selected disabled>Select Unit Name</option>
-                            <option value="">Pc</option>
-                            <option value="">Box</option>
-                            <option value="">Strip</option>
-                            <option value="">Gm</option>
-                            <option value="">Ml</option>
-                            <option value="">IU</option>
-                            <option value="">mg</option>
-                            <option value="">mcg</option>
-                            <option value="">L</option>
-                            <option value="">ml</option>
-                            <option value="">Pcs</option>
-                            <option value="">Bags</option>
-                            <option value="">Pouch</option>
-                            <option value="">Pots</option>
+                            <option value="Pcs">Pcs</option>
+                            <option value="Box">Box</option>
+                            <option value="Strip">Strip</option>
+                            <option value="Gm">Gm</option>
+                            <option value="Ml">Ml</option>
+                            <option value="IU">IU</option>
+                            <option value="mg">mg</option>
+                            <option value="L">L</option>
+                            <option value="ml">ml</option>
+                            <option value="Bags">Bags</option>
+                            <option value="Pouch">Pouch</option>
+                            <option value="Pots">Pots</option>
                         </select></td>
                     </tr>                  
                     <tr>
@@ -98,7 +119,7 @@
                 </table>
             </fieldset>
 
-            <!-- 
+
             <fieldset>
                 <legend>Pricing Information</legend>
                 <table>
@@ -115,16 +136,8 @@
                         <td><input type="number" id="discount" name="discount" placeholder="Enter Discount"></td>
                     </tr>
                     <tr>
-                        <td><label for="mrp">MRP (Tk) : </label></td>
-                        <td><input type="number" id="mrp" name="mrp" placeholder="Enter MRP"></td>
-                    </tr>
-                    <tr>
                         <td><label for="vat">Tax Rate (%) : </label></td>
                         <td><input type="number" id="vat" name="vat" placeholder="Enter VAT"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="vatAmount">Tax Amount (Tk) : </label></td>
-                        <td><input type="number" id="vatAmount" name="vatAmount" placeholder="Enter VAT Amount"></td>
                     </tr>
                 </table>
             </fieldset>
@@ -185,7 +198,6 @@
                     </tr>
                 </table>
             </fieldset>
-            -->
             <table>
                 <tr>
                     <td><input type="submit" value="Submit" id="submit"></td>
