@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Medicine</title>
+    <link rel="stylesheet" href="../design/css/common.css">
+</head>
+
+<body>
+    <h1>Update Medicine</h1>
+    <form action="">
+        <fieldset>
+            <legend>Search Medicine</legend>
+            <table>
+                <tr>
+                    <td><label for="medicineID">Medicine ID : </label></td>
+                    <td><input type="text" id="medicineID" name="medicineID" placeholder="Enter Medicine ID"><input type="button" value="Search"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Medicine Information</legend>
+            <table>
+                    <tr>
+                        <td><label for="medicineID">Medicine ID : </label></td>
+                        <td><input type="text" id="medicineID" name="medicineID" placeholder="Generated ID" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="medicineName">Medicine Name : </label></td>
+                        <td><input type="text" id="medicineName" name="medicineName" placeholder="Enter Medicine Name" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="image">Image : </label></td>
+                        <td><input type="file" id="image" name="image" placeholder="Upload Image"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="brandName">Brand Name : </label></td>
+                        <td><input type="text" id="brandName" name="brandName" placeholder="Enter Brand Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="genericName">Generic Name : </label></td>
+                        <td><input type="text" id="genericName" name="genericName" placeholder="Enter Generic Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="category">Category : </label></td>
+                        <td>
+                            <select name="" id="">
+                                <option value="Select Category">Select Category</option>
+                                <option value="Antibiotics">Antibiotics</option>   
+                                <option value="Antifungal">Antifungal</option>
+                                <option value="Antipyretic">Antipyretic</option>
+                                <option value="Antiseptic">Antiseptic</option>
+                                <option value="Analgesics">Analgesics</option>
+                                <option value="Anti-inflammatory">Anti-inflammatory</option>
+                                <option value="Antacids">Antacids</option>
+                                <option value="Antihistamines">Antihistamines</option>
+                                <option value="Antiparasitics">Antiparasitics</option>
+                                <option value="Antivirals">Antivirals</option>
+                                <option value="Anticancer">Anticancer</option>
+                                <option value="Cardiovascular">Cardiovascular</option>
+                                <option value="CNS Agents">CNS Agents</option>
+                                <option value="Respiratory">Respiratory</option>
+                                <option value="Metabolic">Metabolic</option>
+                                <option value="Vitamins">Vitamins</option>
+                                <option value="Minerals">Minerals</option>
+                                <option value="Supplements">Supplements</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="manufacturerID">Manufacturer ID : </label></td>
+                        <td><input type="text" id="manufacturerID" name="manufacturerID" placeholder="Enter Manufacturer ID" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="strength">Strength : </label></td>
+                        <td><input type="text" id="strength" name="strength" placeholder="Enter Strength"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dosageForm">Dosage Form : </label></td>
+                        <td>
+                            <select name="" id="">
+                                <option value="" selected disabled>Select Dosage Form</option>
+                                <option value="">Tablet</option >
+                                <option value="">Cream</option>
+                                <option value="">Capsule</option>
+                                <option value="">Syrup</option>
+                                <option value="">Injection</option>
+                                <option value="">Ointment</option>
+                                <option value="">Drops</option>
+                                <option value="">Inhaler</option>
+                                <option value="">Suppository</option>
+                                <option value="">Powder</option>
+                                <option value="">Patches</option>
+                                <option value="">Vitamins</option>
+                                <option value="">Supplements</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="unitName">Unit Name : </label></td>
+                        <td><select name="" id="">
+                            <option value="" selected disabled>Select Unit Name</option>
+                            <option value="Pcs">Pcs</option>
+                            <option value="Box">Box</option>
+                            <option value="Strip">Strip</option>
+                            <option value="Gm">Gm</option>
+                            <option value="Ml">Ml</option>
+                            <option value="IU">IU</option>
+                            <option value="mg">mg</option>
+                            <option value="L">L</option>
+                            <option value="ml">ml</option>
+                            <option value="Bags">Bags</option>
+                            <option value="Pouch">Pouch</option>
+                            <option value="Pots">Pots</option>
+                        </select></td>
+                    </tr>                  
+                    <tr>
+                        <td><label for="barcode">Barcode : </label></td>
+                        <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode" readonly></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Pricing Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="purchasePrice">Purchase Price : </label></td>
+                        <td><input type="number" id="purchasePrice" name="purchasePrice" placeholder="Enter Purchase Price"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sellingPrice">Selling Price : </label></td>
+                        <td><input type="number" id="sellingPrice" name="sellingPrice" placeholder="Enter Selling Price"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="discount">Discount Allowed (%) : </label></td>
+                        <td><input type="number" id="discount" name="discount" placeholder="Enter Discount"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vat">Tax Rate (%) : </label></td>
+                        <td><input type="number" id="vat" name="vat" placeholder="Enter VAT"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Stock & Expiry</legend>
+                <table>
+                    <tr>
+                        <td><label for="initialStock">Initial Stock : </label></td>
+                        <td><input type="number" id="initialStock" name="initialStock" placeholder="Enter Initial Stock"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="reorderLevel">Reorder Level : </label></td>
+                        <td><input type="number" id="reorderLevel" name="reorderLevel" placeholder="Enter Reorder Level"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="batchNo">Batch Number : </label></td>
+                        <td><input type="text" id="batchNo" name="batchNo" placeholder="Enter Batch Number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="manufactureDate">Manufacture Date : </label></td>
+                        <td><input type="date" id="manufactureDate" name="manufactureDate" placeholder="Enter Manufacture Date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="expiryDate">Expiry Date : </label></td>
+                        <td><input type="date" id="expiryDate" name="expiryDate" placeholder="Enter Expiry Date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="supplierID">Supplier ID : </label></td>
+                        <td><input type="text" id="supplierID" name="supplierID" placeholder="Enter Supplier ID" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="storageCondition">Storage Instraction : </label></td>
+                        <td><input type="text" id="storageCondition" name="storageCondition" placeholder="Enter Storage Condition"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Medicine Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="prescriptionRequired">Prescription Required : </label></td>
+                        <td><input type="checkbox" id="prescriptionRequired" name="prescriptionRequired">Yes</td>
+                    </tr>
+                    <tr>
+                        <td><label for="description">Description : </label></td>
+                        <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="status">Status : </label></td>
+                        <td>
+                            <input type="radio" name="status" id="status" value="Active">Active
+                            <input type="radio" name="status" id="status" value="Inactive">Inactive
+                        </td> 
+                    </tr>
+                </table>
+            </fieldset>
+            <table>
+                <tr>
+                    <td><input type="submit" value="Update Medicine" id="updateMedicine"></td>
+                    <td><input type="reset" value="Reset Medicine" id="resetMedicine"></td>
+                </tr>
+            </table>
+        </form>
+    </body> 
+</html>
