@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../design/css/common.css">
     <title>Add Stuff</title>
 </head>
 <body>
+    <img src="../design/images/logo.png" id="logo" alt="">
+    <br>
+    <h1>Add Stuff</h1>
     
+    <form>
+        <fieldset>
+            <legend> Stuff Personal Information </legend>
+            <table>
+                <tr>
+                    <td><label for="name"> Stuff Name : </label></td>
+                    <td><input type="text" name="name" id="name" for="name" placeholder="Enter Stuff Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob"> DOB : </label></td>
+                    <td><input type="date" name="dob" id="dob" for="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender"> Gender : </label></td>
+                    <td><input type="radio" name="gender" id="male" for="gender"> Male <input type="radio" name="gender" id="female" for="gender"> Female </td>
+                </tr>
+                <tr>
+                    <td><label for="phone"> Phone : </label></td>
+                    <td><input type="text" name="phone" id="phone" for="phone" placeholder="Enter Phone Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="department"> Department : </label></td>
+                    <td><input type="text" name="department" id="department" for="department" placeholder="Enter Department"></td>
+                </tr>
+                <tr>
+                    <td><label for="designation"> Designation : </label></td>
+                    <td><input type="text" name="designation" id="designation" for="designation" placeholder="Enter Designation"></td>
+                </tr>
+                <tr>
+                    <td><label for="shift"> Shift : </label></td>
+                    <td>
+                      <input type="checkbox" name="shift" id="shift" for="shift"> Morning 
+                      <input type="checkbox" name="shift" id="shift" for="shift"> Afternoon 
+                      <input type="checkbox" name="shift" id="shift" for="shift"> Evening 
+                      <input type="checkbox" name="shift" id="shift" for="shift"> Night 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="salary"> Salary : </label></td>
+                    <td><input type="number" name="salary" id="salary" for="salary" placeholder="Enter Salary"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+            <fieldset>
+                <legend> User Credentials </legend>
+                <table>
+                    <tr>
+                        <td> <label for="username"> User Name: </label> </td>
+                        <td> <input type="text" id="username" for="username" placeholder="Enter username"> </td>
+                    </tr>
+                    <tr>
+                        <td>  <label for="email"> Email : </label> </td>
+                        <td> <input type="email" name="email" id="email" for="email" placeholder="Enter Your Email "> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="password"> Password: </label></td>
+                        <td> <input type="password" id="password" for="password" placeholder="Enter user password"></td>
+
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+
+            <div class="button-group">
+                <input type="submit" id="submit" value="Create Stuff">
+                <input type="reset" id="reset" value="Reset">
+            </div>
+    </form>
 </body>
 </html>
