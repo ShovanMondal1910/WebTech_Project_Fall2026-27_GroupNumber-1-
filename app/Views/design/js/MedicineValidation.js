@@ -2,7 +2,9 @@ function collect_medicine_data()
 {
     let validMedicineID = validateMedicineID();
     let validMedicineName = validateMedicineName();
-
+    let validBrandName = validateBrandName();
+    let validGenericName = validateGenericName();
+    
     return false;
 }
 
@@ -42,4 +44,33 @@ function validateMedicineName()
     else{
         Error.innerHTML = "";
     }
+    return false;
+}
+function validateBrandName()
+{
+    let brandName = document.getElementById("brandName").value;
+    let Error = document.getElementById("brandNameError");
+
+    if(brandName == "" )
+    {
+        Error.innerHTML = "Enter brand name";
+    }
+    else{
+        Error.innerHTML = "";
+    }
+    return false;
+}
+function validateGenericName()
+{
+    let genericName = document.getElementById("genericName").value;
+    let Error = document.getElementById("genericNameError");
+
+    if(genericName == "" )
+    {
+        Error.innerHTML = "Enter generic name";
+    }
+    else{
+        Error.innerHTML = "";
+    }
+    return false;
 }

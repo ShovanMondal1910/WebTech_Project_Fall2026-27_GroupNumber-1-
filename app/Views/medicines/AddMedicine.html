@@ -15,83 +15,89 @@
         <fieldset>
             <legend>Medicine Information</legend>
             <table>
-                    <tr>
-                        <td><label for="medicineID">Medicine ID : </label></td>
-                        <td><input type="text" id="medicineID" name="medicineID" placeholder="Enter / Auto Generate ID">
-                        <p id="medicineIdError" class="Errors"></p></td>
-                    </tr>
-                    <tr>
-                        <td><label for="medicineName">Medicine Name : </label></td>
-                        <td><input type="text" id="medicineName" name="medicineName" placeholder="Enter Medicine Name">
-                        <p id="medicineNameError" class="Errors"></p></td>
-                    </tr>
-                    <tr>
-                        <td><label for="image">Image : </label></td>
-                        <td><input type="file" id="image" name="image" placeholder="Upload Image"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="brandName">Brand Name : </label></td>
-                        <td><input type="text" id="brandName" name="brandName" placeholder="Enter Brand Name"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="genericName">Generic Name : </label></td>
-                        <td><input type="text" id="genericName" name="genericName" placeholder="Enter Generic Name"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="category">Category : </label></td>
-                        <td>
-                            <select name="" id="">
-                                <option value="Select Category">Select Category</option>
-                                <option value="Antibiotics">Antibiotics</option>   
-                                <option value="Antifungal">Antifungal</option>
-                                <option value="Antipyretic">Antipyretic</option>
-                                <option value="Antiseptic">Antiseptic</option>
-                                <option value="Analgesics">Analgesics</option>
-                                <option value="Anti-inflammatory">Anti-inflammatory</option>
-                                <option value="Antacids">Antacids</option>
-                                <option value="Antihistamines">Antihistamines</option>
-                                <option value="Antiparasitics">Antiparasitics</option>
-                                <option value="Antivirals">Antivirals</option>
-                                <option value="Anticancer">Anticancer</option>
-                                <option value="Cardiovascular">Cardiovascular</option>
-                                <option value="CNS Agents">CNS Agents</option>
-                                <option value="Respiratory">Respiratory</option>
-                                <option value="Metabolic">Metabolic</option>
-                                <option value="Vitamins">Vitamins</option>
-                                <option value="Minerals">Minerals</option>
-                                <option value="Supplements">Supplements</option>
-                                <option value="Others">Others</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="strength">Strength : </label></td>
-                        <td><input type="text" id="strength" name="strength" placeholder="Enter Strength"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="dosageForm">Dosage Form : </label></td>
-                        <td>
-                            <select name="" id="">
-                                <option value="" selected disabled>Select Dosage Form</option>
-                                <option value="">Tablet</option >
-                                <option value="">Cream</option>
-                                <option value="">Capsule</option>
-                                <option value="">Syrup</option>
-                                <option value="">Injection</option>
-                                <option value="">Ointment</option>
-                                <option value="">Drops</option>
-                                <option value="">Inhaler</option>
-                                <option value="">Suppository</option>
-                                <option value="">Powder</option>
-                                <option value="">Patches</option>
-                                <option value="">Vitamins</option>
-                                <option value="">Supplements</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="unitName">Unit Name : </label></td>
-                        <td><select name="" id="">
+                <tr>
+                    <td><label for="medicineID">Medicine ID : </label></td>
+                    <td><input type="text" id="medicineID" name="medicineID" placeholder="Enter / Auto Generate ID">
+                        <p id="medicineIdError" class="Errors"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="medicineName">Medicine Name : </label></td>
+                    <td><input type="text" id="medicineName" name="medicineName" placeholder="Enter Medicine Name">
+                        <p id="medicineNameError" class="Errors"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="image">Image : </label></td>
+                    <td><input type="file" id="image" name="image" placeholder="Upload Image"></td>
+                </tr>
+                <tr>
+                    <td><label for="brandName">Brand Name : </label></td>
+                    <td><input type="text" id="brandName" name="brandName" placeholder="Enter Brand Name">
+                        <p id="brandNameError" class="Errors"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="genericName">Generic Name : </label></td>
+                    <td><input type="text" id="genericName" name="genericName" placeholder="Enter Generic Name">
+                        <p id="genericNameError" class="Errors"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="category">Category : </label></td>
+                    <td>
+                        <select name="" id="">
+                            <option value="Select Category">Select Category</option>
+                            <option value="Antibiotics">Antibiotics</option>
+                            <option value="Antifungal">Antifungal</option>
+                            <option value="Antipyretic">Antipyretic</option>
+                            <option value="Antiseptic">Antiseptic</option>
+                            <option value="Analgesics">Analgesics</option>
+                            <option value="Anti-inflammatory">Anti-inflammatory</option>
+                            <option value="Antacids">Antacids</option>
+                            <option value="Antihistamines">Antihistamines</option>
+                            <option value="Antiparasitics">Antiparasitics</option>
+                            <option value="Antivirals">Antivirals</option>
+                            <option value="Anticancer">Anticancer</option>
+                            <option value="Cardiovascular">Cardiovascular</option>
+                            <option value="CNS Agents">CNS Agents</option>
+                            <option value="Respiratory">Respiratory</option>
+                            <option value="Metabolic">Metabolic</option>
+                            <option value="Vitamins">Vitamins</option>
+                            <option value="Minerals">Minerals</option>
+                            <option value="Supplements">Supplements</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="strength">Strength : </label></td>
+                    <td><input type="text" id="strength" name="strength" placeholder="Enter Strength"></td>
+                </tr>
+                <tr>
+                    <td><label for="dosageForm">Dosage Form : </label></td>
+                    <td>
+                        <select name="" id="">
+                            <option value="" selected disabled>Select Dosage Form</option>
+                            <option value="">Tablet</option>
+                            <option value="">Cream</option>
+                            <option value="">Capsule</option>
+                            <option value="">Syrup</option>
+                            <option value="">Injection</option>
+                            <option value="">Ointment</option>
+                            <option value="">Drops</option>
+                            <option value="">Inhaler</option>
+                            <option value="">Suppository</option>
+                            <option value="">Powder</option>
+                            <option value="">Patches</option>
+                            <option value="">Vitamins</option>
+                            <option value="">Supplements</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="unitName">Unit Name : </label></td>
+                    <td><select name="" id="">
                             <option value="" selected disabled>Select Unit Name</option>
                             <option value="Pcs">Pcs</option>
                             <option value="Box">Box</option>
@@ -106,15 +112,24 @@
                             <option value="Pouch">Pouch</option>
                             <option value="Pots">Pots</option>
                         </select></td>
-                    </tr>                  
-                    <tr>
-                        <td><label for="barcode">Barcode : </label></td>
-                        <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode"><input type="button" value="Generate Barcode"></td>
-                    </tr>
-                </table>
-            </fieldset>
+                </tr>
+                <tr>
+                    <td><label for="barcode">Barcode : </label></td>
+                    <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode"><input type="button"
+                            value="Generate Barcode"></td>
+                </tr>
+                <tr>
+                    <td><label for="sellingPrice">Selling Price : </label></td>
+                    <td><input type="number" id="sellingPrice" name="sellingPrice" placeholder="Enter Selling Price"></td>
+                </tr>
+                <tr>
+                    <td><label for="initialStock">Initial Stock : </label></td>
+                    <td><input type="number" id="initialStock" name="initialStock" placeholder="Enter Initial Stock"></td>
+                </tr>
+            </table>
+        </fieldset>
 
-
+        <!-- 
             <fieldset>
                 <legend>Pricing Information</legend>
                 <table>
@@ -174,7 +189,7 @@
                 </table>
             </fieldset>
 
-            <!-- 
+            
             <fieldset>
                 <legend>Medicine Details</legend>
                 <table>
@@ -197,12 +212,13 @@
             </fieldset>
             -->
 
-            <table>
-                <tr>
-                    <td><input type="submit" value="Submit" id="submit"></td>
-                    <td><input type="reset" value="Reset" id="reset"></td>
-                </tr>
-            </table>
-        </form>
-    </body> 
+        <table>
+            <tr>
+                <td><input type="submit" value="Submit" id="submit"></td>
+                <td><input type="reset" value="Reset" id="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
 </html>
