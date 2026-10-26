@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Medicine</title>
     <link rel="stylesheet" href="../design/css/common.css">
+    <script src="../design/js/MedicineValidation.js"></script>
 </head>
 
 <body>
     <h1>Add Medicine</h1>
-    <form action="">
+    <form action="" onsubmit="return collect_medicine_data()">
         <fieldset>
             <legend>Medicine Information</legend>
             <table>
                     <tr>
                         <td><label for="medicineID">Medicine ID : </label></td>
-                        <td><input type="text" id="medicineID" name="medicineID" placeholder="Generated ID"><input type="button" value="Generate ID"></td>
+                        <td><input type="text" id="medicineID" name="medicineID" placeholder="Enter / Auto Generate ID">
+                        <p id="medicineIdError" class="Errors"></p></td>
                     </tr>
                     <tr>
                         <td><label for="medicineName">Medicine Name : </label></td>
-                        <td><input type="text" id="medicineName" name="medicineName" placeholder="Enter Medicine Name"></td>
+                        <td><input type="text" id="medicineName" name="medicineName" placeholder="Enter Medicine Name">
+                        <p id="medicineNameError" class="Errors"></p></td>
                     </tr>
                     <tr>
                         <td><label for="image">Image : </label></td>
@@ -60,14 +63,6 @@
                                 <option value="Others">Others</option>
                             </select>
                         </td>
-                    </tr>
-                    <tr>
-                        <td><label for="manufacturerID">Manufacturer ID : </label></td>
-                        <td><input type="text" id="manufacturerID" name="manufacturerID" placeholder="Enter Manufacturer ID"><input type="button" value="Search"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="manufacturerName">Manufacturer Name : </label></td>
-                        <td><input type="text" id="manufacturerName" name="manufacturerName" placeholder="Enter Manufacturer Name"></td>
                     </tr>
                     <tr>
                         <td><label for="strength">Strength : </label></td>
@@ -178,6 +173,8 @@
                     </tr>
                 </table>
             </fieldset>
+
+            <!-- 
             <fieldset>
                 <legend>Medicine Details</legend>
                 <table>
@@ -198,6 +195,8 @@
                     </tr>
                 </table>
             </fieldset>
+            -->
+
             <table>
                 <tr>
                     <td><input type="submit" value="Submit" id="submit"></td>

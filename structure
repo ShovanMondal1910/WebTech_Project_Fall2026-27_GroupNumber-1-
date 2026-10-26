@@ -51,7 +51,6 @@ Medicine:
     brand,
     genericName,
     category,
-    manufacturerID (FK),
     strength,
     dosageForm,
     unitName,
@@ -73,14 +72,6 @@ Medicine:
     prescriptionRequired,
     description,
     status
-    
-
-Manufacturer:
-    manufacturerID (PK),
-    name,
-    address,
-    phone,
-    email
 
 Supplier:
     supplierID (PK),

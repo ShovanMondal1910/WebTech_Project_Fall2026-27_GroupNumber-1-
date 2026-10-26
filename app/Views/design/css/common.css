@@ -125,3 +125,9 @@ input[type="button"]:hover {
     background-color: skyblue;
     color: black;
 }
+
+.Errors{
+    color: red;
+    text-align: center;
+    font-size: 14px;
+}
