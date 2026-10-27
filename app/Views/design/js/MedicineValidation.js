@@ -4,8 +4,12 @@ function collect_medicine_data()
     let validMedicineName = validateMedicineName();
     let validBrandName = validateBrandName();
     let validGenericName = validateGenericName();
-    
-    return false;
+    let validStrength = validateStrength();
+    let validBarcode = validateBarcode();
+    let validSellingPrice = validateSellingPrice();
+    let validInitialStock = validateInitialStock();
+
+   return false;
 }
 
 function validateMedicineID()
@@ -68,6 +72,66 @@ function validateGenericName()
     if(genericName == "" )
     {
         Error.innerHTML = "Enter generic name";
+    }
+    else{
+        Error.innerHTML = "";
+    }
+    return false;
+}
+
+function validateStrength()
+{
+    let strength = document.getElementById("strength").value;
+    let Error = document.getElementById("strengthError");
+
+    if(strength == "" )
+    {
+        Error.innerHTML = "Enter strength";
+    }
+    else{
+        Error.innerHTML = "";
+    }
+    return false;
+}
+
+function validateBarcode()
+{
+    let barcode = document.getElementById("barcode").value;
+    let Error = document.getElementById("barcodeError");
+
+    if(barcode == "" )
+    {
+        Error.innerHTML = "Enter barcode";
+    }
+    else{
+        Error.innerHTML = "";
+    }
+    return false;
+}
+
+function validateSellingPrice()
+{
+    let sellingPrice = document.getElementById("sellingPrice").value;
+    let Error = document.getElementById("sellingPriceError");
+
+    if(sellingPrice == "" )
+    {
+        Error.innerHTML = "Enter selling price";
+    }
+    else{
+        Error.innerHTML = "";
+    }
+    return false;
+}
+
+function validateInitialStock()
+{
+    let initialStock = document.getElementById("initialStock").value;
+    let Error = document.getElementById("initialStockError");
+
+    if(initialStock == "" )
+    {
+        Error.innerHTML = "Enter initial stock";
     }
     else{
         Error.innerHTML = "";

@@ -72,7 +72,9 @@
                 </tr>
                 <tr>
                     <td><label for="strength">Strength : </label></td>
-                    <td><input type="text" id="strength" name="strength" placeholder="Enter Strength"></td>
+                    <td><input type="text" id="strength" name="strength" placeholder="Enter Strength">
+                    <p id="strengthError" class="Errors"></p>   
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="dosageForm">Dosage Form : </label></td>
@@ -116,15 +118,21 @@
                 <tr>
                     <td><label for="barcode">Barcode : </label></td>
                     <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode"><input type="button"
-                            value="Generate Barcode"></td>
+                            value="Generate Barcode">
+                        <p id="barcodeError" class="Errors"></p>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="sellingPrice">Selling Price : </label></td>
-                    <td><input type="number" id="sellingPrice" name="sellingPrice" placeholder="Enter Selling Price"></td>
+                    <td><input type="number" id="sellingPrice" name="sellingPrice" placeholder="Enter Selling Price">
+                        <p id="sellingPriceError" class="Errors"></p>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="initialStock">Initial Stock : </label></td>
-                    <td><input type="number" id="initialStock" name="initialStock" placeholder="Enter Initial Stock"></td>
+                    <td><input type="number" id="initialStock" name="initialStock" placeholder="Enter Initial Stock">
+                        <p id="initialStockError" class="Errors"></p>
+                    </td>
                 </tr>
             </table>
         </fieldset>
