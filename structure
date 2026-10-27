@@ -55,13 +55,14 @@ Medicine:
     dosageForm,
     unitName,
     barcode,
+    sellingPrice,
+    stock,
+
+    /* currently not for useable. Will be useable in future
 
     purchasePrice,
-    sellingPrice,
     discount,
     vat,
-
-    stock,
     reorderLevel,
     batchNo,
     manufactureDate,
@@ -72,6 +73,8 @@ Medicine:
     prescriptionRequired,
     description,
     status
+    */    
+
 
 Supplier:
     supplierID (PK),

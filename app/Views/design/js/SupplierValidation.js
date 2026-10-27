@@ -4,6 +4,7 @@ function collect_supplier_data() {
     let validContactPerson = validationContactPerson();
     let validPhoneNumber = validationPhoneNumber();
     let validEmail = validationEmail();
+    let validAddress= validationAddress();
 
     return false;
 }
@@ -82,3 +83,16 @@ function validationEmail() {
     return false;
 }
 
+ function validationAddress()
+ {
+    let address = document.getElementById("address").value;
+    let Error = document.getElementById("addressError");
+    
+    if (address == "") {
+        Error.innerHTML = "Enter address";
+    }
+    else {
+        Error.innerHTML = "";
+    }
+    return false;
+ }
