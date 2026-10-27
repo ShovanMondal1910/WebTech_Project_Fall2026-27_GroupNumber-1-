@@ -5,40 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Supplier</title>
     <link rel="stylesheet" href="../design/css/common.css">
+    <script  src="../design/js/SupplierValidation.js" defer></script>
 </head>
 <body>
-    <form action="">
+    <form action="" onsubmit="return collect_supplier_data()">
         <h1>Add Supplier</h1>
         <fieldset>
             <legend>Supplier Information</legend>
             <table>
                 <tr>
                     <td><label for="supplierID">Supplier ID : </label></td>
-                    <td><input type="text" id="supplierID" name="supplierID" placeholder="Auto Generate"><input type="button" value="Generate ID"></td>
+                    <td><input type="text" id="supplierID" name="supplierID" placeholder="Auto Generate">
+                    <p id="supplierIDError" class="Errors"></p></td>
                 </tr>
                 <tr>
                     <td><label for="supplierName">Supplier Name : </label></td>
-                    <td><input type="text" id="supplierName" name="supplierName" placeholder="Enter Supplier Name"></td>
+                    <td><input type="text" id="supplierName" name="supplierName" placeholder="Enter Supplier Name">
+                    <p id="supplierNameError" class="Errors"></p></td>
                 </tr>
                 <tr>
                     <td><label for="contactPerson">Contact Person : </label></td>
-                    <td><input type="text" id="contactPerson" name="contactPerson" placeholder="Enter Contact Person"></td>
+                    <td><input type="text" id="contactPerson" name="contactPerson" placeholder="Enter Contact Person">
+                    <p id="contactPersonError" class="Errors"></p></td>
                 </tr>
                 <tr>
                     <td><label for="phoneNumber">Phone Number : </label></td>
-                    <td><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number"></td>
+                    <td><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number">
+                    <p id="phoneNumberError" class="Errors"></p></td>
                 </tr>
                 <tr>
                     <td><label for="email">Email : </label></td>
-                    <td><input type="text" id="email" name="email" placeholder="Enter Email"></td>
+                    <td><input type="text" id="email" name="email" placeholder="Enter Email">
+                    <p id="emailError" class="Errors"></p></td>
                 </tr>
                 <tr>
                     <td><label for="address">Address : </label></td>
-                    <td><textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Address"></textarea></td>
+                    <td><textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Address"></textarea>
+                    <p id="addressError" class="Errors"></p></td>
                 </tr>
                 <tr>
                     <td><label for="status">Status : </label></td>
-                    <td><input type="radio" name="status" id="status" value="Active"><label for="status">Active</label><input type="radio" name="status" id="status" value="Inactive"><label for="status">Inactive</label></td>
+                    <td><input type="radio" name="status" id="status" value="Active"><label for="status">Active</label><input type="radio" name="status" id="status" value="Inactive"><label for="status">Inactive</label>
+                </td>
                 </tr>
             </table>
         </fieldset>
