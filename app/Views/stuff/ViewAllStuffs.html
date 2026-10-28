@@ -3,12 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../design/css/viewallstuffs.css">
     <title>View All Stuffs</title>
 </head>
 <body>
     <h1>All Stuffs Information</h1>
-    <form action="">
-        
+
+    <form action="" method="post">
+        <fieldset>
+            <legend> Search Stuff </legend>
+            <table>
+                <tr>
+                    <td><label for="search"> Search Stuff : </label></td>
+                    <td><input type="text" name="search" id="search" placeholder="Search by Stuff ID / Employee Code / Name" required></td>
+                    <td><input type="submit" id="searchBtn" value="Search"></td>
+                </tr>
+            </table>
+        </fieldset>
     </form>
+    <br>
+
+    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Stuff ID</th>
+                <th>Employee Code</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Department</th>
+                <th>Designation</th>
+                <th>Shift</th>
+                <th>Joining Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample row -->
+            <tr>
+                <td>1</td>
+                <td>STF-0001</td>
+                <td>Rahim Uddin</td>
+                <td>01700000000</td>
+                <td>Pharmacy</td>
+                <td>Pharmacist</td>
+                <td>Morning</td>
+                <td>2026-01-10</td>
+                <td>Active</td>
+                <td>
+                    <a href="UpdateStuff.html">Edit</a>
+                    <a href="#">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

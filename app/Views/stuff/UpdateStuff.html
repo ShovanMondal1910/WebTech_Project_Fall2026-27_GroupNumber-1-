@@ -3,9 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../design/css/common.css">
     <title>Update Stuff</title>
 </head>
 <body>
-    
+    <img src="../design/images/logo.png" id="logo" alt="">
+    <br>
+    <h1>Update Stuff</h1>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend> Search Stuff </legend>
+            <table>
+                <tr>
+                    <td><label for="search"> Stuff ID / Employee Code : </label></td>
+                    <td><input type="text" name="search" id="search" placeholder="Enter Stuff ID or Employee Code" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" id="searchBtn" value="Search"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend> Stuff Personal Information </legend>
+            <table>
+                <tr>
+                    <td><label for="stuffId"> Stuff ID : </label></td>
+                    <td><input type="text" name="stuffId" id="stuffId" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="name"> Stuff Full Name : </label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter Stuff Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob"> DOB : </label></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender"> Gender : </label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                        <input type="radio" name="gender" value="Other"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone"> Phone : </label></td>
+                    <td><input type="text" name="phone" id="phone" placeholder="Enter Phone Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="emergencyContact"> Emergency Contact : </label></td>
+                    <td><input type="text" name="emergencyContact" id="emergencyContact" placeholder="Enter Emergency Contact Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="qualification"> Qualification : </label></td>
+                    <td><input type="text" name="qualification" id="qualification" placeholder="Enter Qualification"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend> Job Information </legend>
+            <table>
+                <tr>
+                    <td><label for="employeeCode"> Employee Code : </label></td>
+                    <td><input type="text" name="employeeCode" id="employeeCode" placeholder="Example : STF-0001"></td>
+                </tr>
+                <tr>
+                    <td><label for="department"> Department : </label></td>
+                    <td>
+                        <select name="department" id="department">
+                            <option value="blank">Select Department</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Inventory">Inventory</option>
+                            <option value="Pharmacy">Pharmacy</option>
+                            <option value="Purchase">Purchase</option>
+                            <option value="Accounts">Accounts</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="designation"> Designation : </label></td>
+                    <td>
+                        <select name="designation" id="designation">
+                            <option value="blank">Select Designation</option>
+                            <option value="Pharmacist">Pharmacist</option>
+                            <option value="Sales Assistant">Sales Assistant</option>
+                            <option value="Inventory Assistant">Inventory Assistant</option>
+                            <option value="Cashier">Cashier</option>
+                            <option value="Cleaner">Cleaner</option>
+                            <option value="Security Guard">Security Guard</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="licenseNumber"> License Number : </label></td>
+                    <td><input type="text" name="licenseNumber" id="licenseNumber" placeholder="Only for Pharmacist"></td>
+                </tr>
+                <tr>
+                    <td><label for="joiningDate"> Joining Date : </label></td>
+                    <td><input type="date" name="joiningDate" id="joiningDate"></td>
+                </tr>
+                <tr>
+                    <td><label for="shift"> Shift : </label></td>
+                    <td>
+                        <input type="checkbox" name="shift" id="shift" value="Morning"> Morning
+                        <input type="checkbox" name="shift" value="Afternoon"> Afternoon
+                        <input type="checkbox" name="shift" value="Evening"> Evening
+                        <input type="checkbox" name="shift" value="Night"> Night
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="salary"> Salary : </label></td>
+                    <td><input type="number" name="salary" id="salary" placeholder="Enter Salary"></td>
+                </tr>
+                <tr>
+                    <td><label for="employmentStatus"> Employment Status : </label></td>
+                    <td>
+                        <input type="radio" name="employmentStatus" id="employmentStatus" value="Active"> Active
+                        <input type="radio" name="employmentStatus" value="On Leave"> On Leave
+                        <input type="radio" name="employmentStatus" value="Resigned"> Resigned
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <div class="button-group">
+            <input type="submit" id="submit" value="Update Stuff">
+            <input type="reset" id="reset" value="Reset">
+        </div>
+    </form>
 </body>
 </html>
+
+
+
+
