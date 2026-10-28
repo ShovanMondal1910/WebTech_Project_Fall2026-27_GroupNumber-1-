@@ -131,3 +131,29 @@ input[type="button"]:hover {
     text-align: center;
     font-size: 14px;
 }
+
+/* for Stuff Navigation bar */
+.topnav {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.topnav a:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: skyblue;
+    color: black;
+}
