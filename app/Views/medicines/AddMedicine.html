@@ -100,22 +100,19 @@
                 <tr>
                     <td><label>Unit Name:</label></td>
                     <td>
-                        <input type="radio" id="tablet" name="unitName" value="Tablet">
-                        <label for="tablet">Tablet</label>
+                        <input type="radio" id="tablet" name="unitName" value="Tablet">Tablet
+                        <input type="radio" id="capsule" name="unitName" value="Capsule">Capsule
+                        <input type="radio" id="syrup" name="unitName" value="Syrup">Syrup
+                        <input type="radio" id="injection" name="unitName" value="Injection">Injection
+                        <input type="radio" id="drop" name="unitName" value="Drop">Drop
 
-                        <input type="radio" id="capsule" name="unitName" value="Capsule">
-                        <label for="capsule">Capsule</label>
-
-                        <input type="radio" id="syrup" name="unitName" value="Syrup">
-                        <label for="syrup">Syrup</label>
-
-                        <input type="radio" id="injection" name="unitName" value="Injection">
-                        <label for="injection">Injection</label>
-
-                        <input type="radio" id="drop" name="unitName" value="Drop">
-                        <label for="drop">Drop</label>
-
-                        <p id="unitNameError"></p>
+                        <p id="unitNameError" class="Errors"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="barcode">Barcode : </label></td>
+                    <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode">                    
+                        <p id="barcodeError" class="Errors"></p>
                     </td>
                 </tr>
                 <tr>

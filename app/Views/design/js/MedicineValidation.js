@@ -6,6 +6,7 @@ function collect_medicine_data()
     let validGenericName = validateGenericName();
     let validStrength = validateStrength();
     let validBarcode = validateBarcode();
+    let validUnit = validateUnit();
     let validSellingPrice = validateSellingPrice();
     let validInitialStock = validateInitialStock();
 
@@ -107,6 +108,31 @@ function validateBarcode()
         Error.innerHTML = "";
     }
     return false;
+}
+
+function validateUnit()
+{
+    let units = document.querySelectorAll('input[name="unitName"]');
+    let UnitError = document.getElementById("unitNameError");
+    let selectUnit = "";
+
+    for(let i=0; i<units.length; i++)
+    {
+        if(units[i].checked)
+        {
+            selectUnit = units[i].value;
+            break;
+        }
+    }
+    if(selectUnit=="")
+    {
+        UnitError.innerHTML = "Please Enter the Unit Name";
+        return false;
+    }
+    else{
+        UnitError.innerHTML = "Unit Name: "+selectUnit;
+        return true;
+    }
 }
 
 function validateSellingPrice()
