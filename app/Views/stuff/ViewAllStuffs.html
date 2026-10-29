@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../design/css/viewallstuffs.css">
-    <link rel="stylesheet" href="../design/css/Stuff_Registration.css">
+    <script src="../design/js/ViewAllStuffs.js" defer></script>
     <title>View All Stuffs</title>
 </head>
 <body>
@@ -13,17 +13,19 @@
         <a href="ViewAllStuffs.html" class="active">View All Stuffs</a>
         <a href="UpdateStuff.html">Update Stuff</a>
     </div>
-    <!-- <img src="../design/images/logo.png" id="logo" alt=""> -->
-    <br>
+
     <h1>All Stuffs Information</h1>
 
-    <form action="" method="post">
+    <form id="searchForm" action="" method="post">
         <fieldset>
             <legend> Search Stuff </legend>
             <table>
                 <tr>
                     <td><label for="search"> Search Stuff : </label></td>
-                    <td><input type="text" name="search" id="search" placeholder="Search by Stuff ID / Employee Code / Name" required></td>
+                    <td>
+                        <input type="text" name="search" id="search" placeholder="Search by Stuff ID / Employee Code / Name">
+                        <p id="SearchError"></p>
+                    </td>
                     <td><input type="submit" id="searchBtn" value="Search"></td>
                 </tr>
             </table>
@@ -31,7 +33,7 @@
     </form>
     <br>
 
-    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+    <table id="stuffTable" border="1" cellpadding="8" cellspacing="0" width="100%">
         <thead>
             <tr>
                 <th>Stuff ID</th>
@@ -47,7 +49,8 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Sample row -->
+            <!-- Data will be populated here -->
+            <!-- Sample rows (delete later) -->
             <tr>
                 <td>1</td>
                 <td>STF-0001</td>
@@ -60,7 +63,37 @@
                 <td>Active</td>
                 <td>
                     <a href="UpdateStuff.html">Edit</a>
-                    <a href="#">Delete</a>
+                    <a href="#" class="deleteLink">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>STF-0002</td>
+                <td>Karim Hossain</td>
+                <td>01800000000</td>
+                <td>Sales</td>
+                <td>Sales Assistant</td>
+                <td>Evening</td>
+                <td>2026-03-15</td>
+                <td>Active</td>
+                <td>
+                    <a href="UpdateStuff.html">Edit</a>
+                    <a href="#" class="deleteLink">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>STF-0003</td>
+                <td>Nusrat Jahan</td>
+                <td>01900000000</td>
+                <td>Inventory</td>
+                <td>Inventory Assistant</td>
+                <td>Morning</td>
+                <td>2026-05-20</td>
+                <td>On Leave</td>
+                <td>
+                    <a href="UpdateStuff.html">Edit</a>
+                    <a href="#" class="deleteLink">Delete</a>
                 </td>
             </tr>
         </tbody>
