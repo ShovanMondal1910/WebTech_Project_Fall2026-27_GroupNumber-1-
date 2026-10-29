@@ -4,8 +4,10 @@ function collect_medicine_data()
     let validMedicineName = validateMedicineName();
     let validBrandName = validateBrandName();
     let validGenericName = validateGenericName();
+    let validCategory = validateCategory();
     let validStrength = validateStrength();
     let validBarcode = validateBarcode();
+    let validUnit = validateUnit();
     let validSellingPrice = validateSellingPrice();
     let validInitialStock = validateInitialStock();
 
@@ -79,6 +81,22 @@ function validateGenericName()
     return false;
 }
 
+function validateCategory()
+{
+    let category = document.getElementById("category").value;
+    let Error = document.getElementById("categoryError");
+
+    if (category == "Select Category" || category == "")
+    {
+        Error.innerHTML = "Please select a category";
+    }
+    else
+    {
+        Error.innerHTML = "";
+    }
+    return false;
+}
+
 function validateStrength()
 {
     let strength = document.getElementById("strength").value;
@@ -107,6 +125,31 @@ function validateBarcode()
         Error.innerHTML = "";
     }
     return false;
+}
+
+function validateUnit()
+{
+    let units = document.querySelectorAll('input[name="unitName"]');
+    let UnitError = document.getElementById("unitNameError");
+    let selectUnit = "";
+
+    for(let i=0; i<units.length; i++)
+    {
+        if(units[i].checked)
+        {
+            selectUnit = units[i].value;
+            break;
+        }
+    }
+    if(selectUnit=="")
+    {
+        UnitError.innerHTML = "Please Enter the Unit Name";
+        return false;
+    }
+    else{
+        UnitError.innerHTML = "Unit Name: "+selectUnit;
+        return true;
+    }
 }
 
 function validateSellingPrice()
