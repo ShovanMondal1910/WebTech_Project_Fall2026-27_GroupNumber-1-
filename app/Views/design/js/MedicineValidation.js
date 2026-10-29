@@ -4,6 +4,7 @@ function collect_medicine_data()
     let validMedicineName = validateMedicineName();
     let validBrandName = validateBrandName();
     let validGenericName = validateGenericName();
+    let validCategory = validateCategory();
     let validStrength = validateStrength();
     let validBarcode = validateBarcode();
     let validUnit = validateUnit();
@@ -75,6 +76,22 @@ function validateGenericName()
         Error.innerHTML = "Enter generic name";
     }
     else{
+        Error.innerHTML = "";
+    }
+    return false;
+}
+
+function validateCategory()
+{
+    let category = document.getElementById("category").value;
+    let Error = document.getElementById("categoryError");
+
+    if (category == "Select Category" || category == "")
+    {
+        Error.innerHTML = "Please select a category";
+    }
+    else
+    {
         Error.innerHTML = "";
     }
     return false;
