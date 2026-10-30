@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="design/common.css">
+            <script src="updateadmin.js"> </script>
+
+
+</head>
+<body>
+       <nav class="navbar" aria-label="Main navigation">
+        <button type="button" class="nav-toggle" id="navToggle"
+                aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="Navbar.html">Home</a></li>
+            <li><a href="admin.html">Dashboard</a></li>
+        </ul>
+    </nav>
+    <br>
+    <img src="logo.png" id="logo" alt="Logo">
+    <h1> Admin Dashboard </h1>
+    <form onsubmit="return collect_data()" novalidate>
+        <fieldset>
+            <legend>Search Admin</legend>
+            <div>
+                <table>
+                    <tr>
+                        <label for="searchAdmin" class="searchAdmin">Search Admin</label>
+                        <input type="text" name="searchadmin" id="searchadmin" placeholder="Search By Name/Id" required>
+                        <div class="button-group">
+                            <input type="submit" id="submit" value="Search Addmin">
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset>
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Admin Id</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </fieldset>
+        <div class="button-group">
+    <input type="button" value="Add Admin" onclick="location.href='adminreg.html'">
+    <input type="button" value="Update Admin" onclick="location.href='updateadmin.html'">
+    <input type="reset" value="Reset">
+</div>
+
+ </div>
+ <br>
+<fieldset>
+            <legend>Search Medicine</legend>
+            <div>
+                <table>                    <tr>
+                        <label for="searchAdmin" class="searchAdmin">Search Medicine</label>
+                        <input type="text" name="searchadmin" id="searchadmin" placeholder="Search By Name/Id" required>
+                        <div class="button-group">
+                            <input type="submit" id="submit" value="Search Medicine">
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset>
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                <th>Medicine ID</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Generic Name</th>
+                <th>Category</th>
+                <th>Barcode</th>
+                <th>Status</th>
+                <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </fieldset>
+        <div class="button-group">
+    <input type="submit" id="submit" value="Add Medicine">
+    <input type="reset" id="reset" value="Update Medicine">
+    <input type="reset" id="reset" value="Reset">
+
+ </div>
+ <br>
+ <fieldset>
+            <legend>Search Stuff</legend>
+            <div>
+                <table>
+                    <tr>
+                        <label for="searchstuff" class="searchAdmin">Search Stuff</label>
+                        <input type="text" name="searchstuff" id="searchstuff" placeholder="Search By Name/Id" required>
+                        <div class="button-group">
+                            <input type="submit" id="submit" value="Search Medicine">
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset>
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                <th>Stuff ID</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </fieldset>
+        <div class="button-group">
+    <input type="submit" id="submit" value="Add Stuff">
+    <input type="reset" id="reset" value="Update Stuff">
+    <input type="reset" id="reset" value="Reset">
+
+ </div>
+</form>
+ <footer>
+        <div class="footer-grid">
+            <!-- About -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide quality healthcare services to our community, with a team of dedicated doctors, nurses, and staff available 24/7.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Header.html">Home</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    <li><a href="#">Lab Tests</a></li>
+                    <li><a href="#">Emergency</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <address>
+                    123 Health Avenue<br>
+                    Dhaka, Bangladesh<br><br>
+                    Phone: +880 1700-000000<br>
+                    Email: info@hospital.bd
+                </address>
+            </div>
+
+            <div class="footer-section">
+                <h3>Working Hours</h3>
+                <p>
+                    Mon – Fri: 8:00 AM – 8:00 PM<br>
+                    Saturday: 9:00 AM – 5:00 PM<br>
+                    Sunday: Closed<br><br>
+                    Emergency: 24 / 7
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 City Hospital. All rights reserved.
+        </div>
+    </footer>
+
+</body>
