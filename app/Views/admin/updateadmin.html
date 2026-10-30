@@ -1,0 +1,126 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="design/common.css">
+            <script src="updateadmin.js"> </script>
+
+
+</head>
+<body>
+       <nav class="navbar" aria-label="Main navigation">
+        <button type="button" class="nav-toggle" id="navToggle"
+                aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="Navbar.html">Home</a></li>
+            <li><a href="admin.html">Dashboard</a></li>
+        </ul>
+    </nav>
+    <br>
+    <img src="logo.png" id="logo" alt="Logo">
+
+    <h1> Update Admin </h1>
+
+        <p> Fill in the details to update administrator. </p>
+<form onsubmit="return collect_data()" novalidate>
+    <fieldset>
+        
+                <legend> Administrator Id </legend>
+                <table>
+                        <tr>
+                            <td> <label for="Admin Id"> Admin Id : </label> </td>
+                        <td> <input type="text" name="AdminId" id="AdminId" placeholder="Enter Admin Id" required>
+                        <span id="IdError"></span>
+                </td>
+            </tr>
+</div>
+                </table>
+            </fieldset>
+            <div class="button-group">
+ <input type="reset" id="reset" value="Search">
+</div>
+            <br>
+            <fieldset>
+                <legend> Administrator Information </legend>
+                <table>
+                    
+                    <tr>
+                        <td> <label for="Phone"> Phone : </label> </td>
+                        <td>
+                            +88 <input type="tel" name="Phone" id="Phone" placeholder="01XXXXXXXXX" required>
+                                    <span id="PhoneError"></span>
+
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td> <label for="Address"> Address : </label> </td>
+                        <td>
+                            <textarea name="Address" id="Address" cols="20" rows="5" style="resize: none;" placeholder="Enter Your Address" required></textarea>
+                                    <span id="AddressError"></span>
+
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <br> 
+<div class="button-group">
+    <input type="submit" id="submit" value="Update Admin">
+    <input type="reset" id="reset" value="Reset">
+</div>
+        </form>
+           <footer>
+        <div class="footer-grid">
+            <!-- About -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide quality healthcare services to our community, with a team of dedicated doctors, nurses, and staff available 24/7.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Header.html">Home</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    <li><a href="#">Lab Tests</a></li>
+                    <li><a href="#">Emergency</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <address>
+                    123 Health Avenue<br>
+                    Dhaka, Bangladesh<br><br>
+                    Phone: +880 1700-000000<br>
+                    Email: info@hospital.bd
+                </address>
+            </div>
+
+            <div class="footer-section">
+                <h3>Working Hours</h3>
+                <p>
+                    Mon – Fri: 8:00 AM – 8:00 PM<br>
+                    Saturday: 9:00 AM – 5:00 PM<br>
+                    Sunday: Closed<br><br>
+                    Emergency: 24 / 7
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 City Hospital. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
