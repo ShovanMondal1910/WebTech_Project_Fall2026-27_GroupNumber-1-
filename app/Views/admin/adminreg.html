@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="design/common.css">
+            <script src="script.js"> </script>
+
+
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <button type="button" class="nav-toggle" id="navToggle"
+                aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="Navbar.html">Home</a></li>
+            <li><a href="admin.html">Dashboard</a></li>
+        </ul>
+    </nav>
+    <br>
+<img src="logo.png" id="logo" alt="Logo">
+
+
+    
+
+    <h1> Add New Admin </h1>
+
+        <p> Fill in the details to register a new administrator. </p>
+<form onsubmit="return collect_data()" novalidate>    
+    <fieldset>
+                <legend> Administrator Information </legend>
+                <table>
+                    <tr>
+                        <td> <label for="FullName"> Full Name : </label> </td>
+                        <td> <input type="text" name="FullName" id="FullName" placeholder="Enter Your Full Name" required>
+                        <span id="NameError"></span>
+                </td>
+                    </tr>
+ 
+                    <tr>
+                        <td> <label for="DOB"> Date of Birth : </label> </td>
+                        <td> <input type="date" name="DOB" id="DOB" required> 
+                                <span id="DOBError"></span></td>
+                    </tr>
+ 
+                    <tr>
+                        <td> <label> Gender : </label> </td>
+                        <td>
+                            <input type="radio" name="gender" id="Male" value="Male"> <label for="Male"> Male </label>
+                            <input type="radio" name="gender" id="Female" value="Female"> <label for="Female"> Female </label>
+                            <input type="radio" name="gender" id="Other" value="Other"> <label for="Other"> Other </label>
+                            <span id ="ErrorGender"></span>
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td> <label for="Phone"> Phone : </label> </td>
+                        <td>
+                            +88 <input type="tel" name="Phone" id="Phone" placeholder="01XXXXXXXXX" required>
+                                    <span id="PhoneError"></span>
+
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td> <label for="Address"> Address : </label> </td>
+                        <td>
+                            <textarea name="Address" id="Address" cols="20" rows="5" style="resize: none;" placeholder="Enter Your Address" required></textarea>
+                                    <span id="AddressError"></span>
+
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend> User Credentials </legend>
+            <table>
+                <tr>
+                    <td> <label for="username"> User Name: </label> </td>
+                    <td> <input type="text" name="username" id="username" placeholder="Enter username">
+                            <span id="UsernameError"></span></td>
+                </tr>
+                <tr>
+                    <td>  <label for="email"> Email : </label> </td>
+                    <td> <input type="email" name="email" id="email" placeholder="Enter Your Email" required> 
+                            <span id="EmailError"></span></td>
+                </tr>
+                
+<tr>
+    <td>
+        <label for="password">Password:</label>
+        <span id="PasswordError"></span>
+    </td>
+    <td>
+        <div class="password-box">
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter user password">
+
+            <button
+                type="button"
+                id="togglePassword"
+                class="eye-btn"
+                aria-label="Show password"
+                title="Show password"
+            >
+                👁
+            </button>
+        </div>
+    </td>
+</tr>
+
+            </table>
+        </fieldset>
+  <div class="button-group">
+    <input type="submit" id="submit" value="Add Admin">
+    <input type="reset" id="reset" value="Reset">
+</div>
+        </form>
+        
+<footer>
+        <div class="footer-grid">
+            <!-- About -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide quality healthcare services to our community, with a team of dedicated doctors, nurses, and staff available 24/7.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Header.html">Home</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    <li><a href="#">Lab Tests</a></li>
+                    <li><a href="#">Emergency</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <address>
+                    123 Health Avenue<br>
+                    Dhaka, Bangladesh<br><br>
+                    Phone: +880 1700-000000<br>
+                    Email: info@hospital.bd
+                </address>
+            </div>
+
+            <!-- Hours -->
+            <div class="footer-section">
+                <h3>Working Hours</h3>
+                <p>
+                    Mon – Fri: 8:00 AM – 8:00 PM<br>
+                    Saturday: 9:00 AM – 5:00 PM<br>
+                    Sunday: Closed<br><br>
+                    Emergency: 24 / 7
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 City Hospital. All rights reserved.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
