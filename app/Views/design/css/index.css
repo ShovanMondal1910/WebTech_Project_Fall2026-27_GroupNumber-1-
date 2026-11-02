@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: #1d2733;
+    background-color: bisque;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+#logo {
+    display: block;
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    padding: 14px;
+    margin: 10px 0;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header p {
+    margin: 6px 0 0 0;
+    color: #dfe6ee;
+}
+
+.footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 4px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.footer h5 {
+    margin: 8px 0;
+}
+
+.admin .header,   .admin legend,   .admin #submit,   .admin .user-btn   { background-color: #1f3a5f; }
+.stuff .header,   .stuff legend,   .stuff #submit,   .stuff .user-btn   { background-color: #0f6e6e; }
+.customer .header, .customer legend, .customer #submit, .customer .user-btn { background-color: #6a3d8f; }
+.medicine .header, .medicine legend, .medicine #submit, .medicine .user-btn { background-color: #a4541c; }
+
+.user-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user-card {
+    flex: 1 1 calc(50% - 10px);
+    background-color: white;
+    border: 1px solid #c9d3de;
+    border-top: 6px solid gray;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.user-card h2 {
+    margin: 0 0 6px 0;
+}
+
+.user-card p {
+    color: #4a5868;
+    margin: 0 0 16px 0;
+}
+
+.user-card.admin    { border-top-color: #1f3a5f; }
+.user-card.stuff    { border-top-color: #0f6e6e; }
+.user-card.customer { border-top-color: #6a3d8f; }
+.user-card.medicine { border-top-color: #a4541c; }
+
+.user-btn {
+    width: 100%;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-btn:hover {
+    opacity: 0.85;
+}
