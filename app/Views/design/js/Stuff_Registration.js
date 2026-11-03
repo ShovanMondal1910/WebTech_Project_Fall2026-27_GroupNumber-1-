@@ -1,4 +1,3 @@
-// Stuff Name
 function validate_name() {
     let name = document.getElementById("name").value.trim();
     let error = document.getElementById("NameError");
@@ -22,7 +21,6 @@ function validate_name() {
     }
 }
 
-// Date of Birth
 function validate_dob() {
     let dob = document.getElementById("dob").value;
     let error = document.getElementById("DobError");
@@ -56,7 +54,6 @@ function validate_dob() {
     }
 }
 
-// Gender (radio)
 function validate_gender() {
     let genders = document.querySelectorAll('input[name="gender"]');
     let error = document.getElementById("GenderError");
@@ -78,7 +75,6 @@ function validate_gender() {
     }
 }
 
-// Phone
 function validate_phone() {
     let phone = document.getElementById("phone").value.trim();
     let error = document.getElementById("PhoneError");
@@ -98,7 +94,6 @@ function validate_phone() {
     }
 }
 
-// Address
 function validate_address() {
     let address = document.getElementById("address").value.trim();
     let error = document.getElementById("AddressError");
@@ -117,7 +112,6 @@ function validate_address() {
     }
 }
 
-// Department
 function validate_department() {
     let department = document.getElementById("department").value.trim();
     let error = document.getElementById("DeptError");
@@ -132,7 +126,6 @@ function validate_department() {
     }
 }
 
-// Designation (select)
 function validate_designation() {
     let designation = document.getElementById("designation").value;
     let error = document.getElementById("DesignationError");
@@ -147,7 +140,6 @@ function validate_designation() {
     }
 }
 
-// Shift (checkbox)
 function validate_shift() {
     let shifts = document.querySelectorAll('input[name="shift"]');
     let error = document.getElementById("ShiftError");
@@ -169,7 +161,6 @@ function validate_shift() {
     }
 }
 
-// Salary
 function validate_salary() {
     let salaryText = document.getElementById("salary").value.trim();
     let error = document.getElementById("SalaryError");
@@ -189,7 +180,6 @@ function validate_salary() {
     }
 }
 
-// User Name
 function validate_username() {
     let username = document.getElementById("username").value.trim();
     let error = document.getElementById("UsernameError");
@@ -213,7 +203,6 @@ function validate_username() {
     }
 }
 
-// Email
 function validate_email() {
     let email = document.getElementById("email").value.trim();
     let error = document.getElementById("EmailError");
@@ -233,7 +222,6 @@ function validate_email() {
     }
 }
 
-// Password
 function validate_password() {
     let password = document.getElementById("password").value;
     let error = document.getElementById("PasswordError");
@@ -256,7 +244,6 @@ function validate_password() {
     }
 }
 
-// Confirm Password
 function validate_confirm_password() {
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirmPassword").value;
@@ -276,7 +263,6 @@ function validate_confirm_password() {
     }
 }
 
-// Collect all validations (every function runs, so all errors show together)
 function collect_data() {
     let a = validate_name();
     let b = validate_dob();
@@ -295,7 +281,6 @@ function collect_data() {
     return a && b && c && d && e && f && g && h && i && j && k && l && m;
 }
 
-// Clear all messages when Reset is clicked
 function clear_messages() {
     let messages = document.querySelectorAll("p");
     for (let i = 0; i < messages.length; i++) {
