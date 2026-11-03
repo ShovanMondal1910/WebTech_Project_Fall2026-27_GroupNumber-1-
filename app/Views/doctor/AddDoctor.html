@@ -14,7 +14,7 @@
     <img src="../design/images/logo.png" id="logo" alt="Logo">
     <br>
     <h1>Add Doctor</h1>
-    <form id="doctorForm" action="" method="post" onsubmit="return validateDoctorForm()">
+    <form id="doctorForm" action="" method="post" onsubmit="return collect_doctor_data()">
         <fieldset>
             <legend>Doctor Personal Information</legend>
             <table>
@@ -37,9 +37,9 @@
                 <tr>
                     <td><label>Gender :</label></td>
                     <td>
-                        <input type="radio" name="gender" id="male" value="Male"> Male
-                        <input type="radio" name="gender" id="female" value="Female"> Female
-                        <input type="radio" name="gender" id="other" value="Other"> Other
+                        <input type="radio" name="gender" id="Male" value="Male"> Male
+                        <input type="radio" name="gender" id="Female" value="Female"> Female
+                        <input type="radio" name="gender" id="Other" value="Other"> Other
                         <p id="GenderError" class="Errors"></p>
                     </td>
                 </tr>
@@ -47,7 +47,8 @@
                 <tr>
                     <td><label for="phone">Phone :</label></td>
                     <td>
-                        <input type="text" name="phone" id="phone" placeholder="Enter Contact Number (e.g., 017xxxxxxxx)">
+                        <input type="text" name="phone" id="phone"
+                            placeholder="Enter Contact Number (e.g., 017xxxxxxxx)">
                         <p id="PhoneError" class="Errors"></p>
                     </td>
                 </tr>
@@ -63,16 +64,9 @@
                 <tr>
                     <td><label for="address">Address :</label></td>
                     <td>
-                        <textarea name="address" id="address" rows="4" placeholder="Enter Chamber or Residential Address"></textarea>
+                        <textarea name="address" id="address" rows="4"
+                            placeholder="Enter Chamber or Residential Address"></textarea>
                         <p id="AddressError" class="Errors"></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="doctorImage">Profile Photo :</label></td>
-                    <td>
-                        <input type="file" name="doctorImage" id="doctorImage" accept="image/*">
-                        <p id="ImageError" class="Errors"></p>
                     </td>
                 </tr>
             </table>
@@ -85,7 +79,8 @@
                 <tr>
                     <td><label for="licenseNo">License No :</label></td>
                     <td>
-                        <input type="text" name="licenseNo" id="licenseNo" placeholder="Enter Medical Registration / License No">
+                        <input type="text" name="licenseNo" id="licenseNo"
+                            placeholder="Enter Medical Registration / License No">
                         <p id="LicenseError" class="Errors"></p>
                     </td>
                 </tr>
@@ -115,7 +110,8 @@
                 <tr>
                     <td><label for="qualification">Degrees :</label></td>
                     <td>
-                        <input type="text" name="qualification" id="qualification" placeholder="e.g., MBBS, FCPS, MD, MS">
+                        <input type="text" name="qualification" id="qualification"
+                            placeholder="e.g., MBBS, FCPS, MD, MS">
                         <p id="QualificationError" class="Errors"></p>
                     </td>
                 </tr>
@@ -138,14 +134,6 @@
                 </tr>
 
                 <tr>
-                    <td><label for="hospital">Hospita :</label></td>
-                    <td>
-                        <input type="text" name="hospital" id="hospital" placeholder="Enter Hospital or Clinic Name">
-                        <p id="HospitalError" class="Errors"></p>
-                    </td>
-                </tr>
-
-                <tr>
                     <td><label>Visiting Days :</label></td>
                     <td>
                         <input type="checkbox" name="visitingDays" id="sat" value="Saturday"> Sat
@@ -162,7 +150,8 @@
                 <tr>
                     <td><label for="visitingHours">Visiting Hours :</label></td>
                     <td>
-                        <input type="text" name="visitingHours" id="visitingHours" placeholder="e.g., 05:00 PM - 09:00 PM">
+                        <input type="text" name="visitingHours" id="visitingHours"
+                            placeholder="e.g., 05:00 PM - 09:00 PM">
                         <p id="VisitingHoursError" class="Errors"></p>
                     </td>
                 </tr>
@@ -170,7 +159,8 @@
                 <tr>
                     <td><label for="consultationFee">Consultation Fee (Tk) :</label></td>
                     <td>
-                        <input type="number" name="consultationFee" id="consultationFee" placeholder="Enter Consultation Fee (e.g., 800)" min="0">
+                        <input type="number" name="consultationFee" id="consultationFee"
+                            placeholder="Enter Consultation Fee (e.g., 800)" min="0">
                         <p id="FeeError" class="Errors"></p>
                     </td>
                 </tr>
@@ -200,14 +190,15 @@
                 <tr>
                     <td><label for="confirmPassword">Confirm Password :</label></td>
                     <td>
-                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-enter password">
+                        <input type="password" name="confirmPassword" id="confirmPassword"
+                            placeholder="Re-enter password">
                         <p id="ConfirmPasswordError" class="Errors"></p>
                     </td>
                 </tr>
             </table>
         </fieldset>
         <br>
-        
+
         <div class="button-group">
             <input type="submit" id="submit" value="Add Doctor">
             <input type="reset" id="reset" value="Reset">
