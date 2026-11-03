@@ -1,6 +1,17 @@
 function collect_customer_data()
 {
     let validCustomerName = validateCustomerName();
+    let validDOB = validateDOB();
+    let validGender = validateGender();
+    let validContact = validateContact();
+    let validAddress = validateAddress();
+    let validvalidFile = validateFile();
+    let validCitizenship = validateCitizenship();
+    let validUsername = validateUsername();
+    let validEmail = validateEmail();
+    let validPassword = validatePassword();
+
+
 
     return validCustomerName;
 }
