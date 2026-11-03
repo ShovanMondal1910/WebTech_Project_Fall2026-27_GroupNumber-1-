@@ -13,7 +13,16 @@ function collect_customer_data()
 
 
 
-    return validCustomerName;
+    return validCustomerName &&
+     validDOB && 
+     validGender && 
+     validContact && 
+     validAddress &&
+     validvalidFile &&
+     validCitizenship && 
+     validUsername && 
+     validEmail &&
+     validPassword;
 }
 
 function validateCustomerName()
