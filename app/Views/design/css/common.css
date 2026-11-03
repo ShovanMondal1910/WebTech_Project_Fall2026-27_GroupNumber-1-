@@ -128,8 +128,29 @@ input[type="button"]:hover {
 
 .Errors{
     color: red;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
+    font-weight: bold;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+    background-color: skyblue;
+    color: black;
 }
 
 /* for Stuff Navigation bar */
