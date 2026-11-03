@@ -24,17 +24,29 @@
 
                <tr> 
                     <td> <label for="DOB"> DOB : </label></td>
-                    <td> <input type ="date" name ="DOB" id="DOB" for="DOB"> </td>
+                    <td> <input type ="date" name ="DOB" id="DOB" for="DOB"> 
+                     <p id="DOBError" class="Errors"></p>
+                    </td>
                 </tr>
 
                 <tr>
                     <td> <label for="CustomerGender"> Gender : </label></td>
-                    <td> <input type="radio" name="gender" id="Male" for="Gender"> Male <input type="radio" name="gender" id="Female" for="Gender"> Female </td>
+                    <td> <input type="radio" name="gender" id="Male" value="Male">
+                        <label for="Male"> Male</label> 
+                        
+                        <input type="radio" name="gender" id="Female" value="Female">
+                        <label for="Female"> Female</label>
+
+                     <p id="GenderError" class="Errors"></p>
+                    </td>
                 </tr>
 
                 <tr>
                     <td> <label for="CustomerPhone"> Contact : </label></td>
-                    <td> <input type="number" name="CustomerPhone" id="CustomerPhone" for="CustomerPhone" placeholder="Enter Your Phone "> </td>
+                    <td> <input type="phone" name="CustomerPhone" id="CustomerPhone" for="CustomerPhone" placeholder="Enter Your Phone ">
+                        
+                     <p id="CustomerPhoneError" class="Errors"></p>
+                     </td>
                 </tr>
                 
                 <tr> 
