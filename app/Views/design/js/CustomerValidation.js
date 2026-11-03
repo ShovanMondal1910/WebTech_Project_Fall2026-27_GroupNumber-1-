@@ -4,7 +4,7 @@ function collect_customer_data()
     let validDOB = validateDOB();
     let validGender = validateGender();
     let validCustomerPhone = validateCustomerPhone();
-    // let validAddress = validateAddress();
+    let validAddress = validateAddress();
     // let validFile = validateFile();
     // let validCitizenship = validateCitizenship();
     // let validUsername = validateUsername();
@@ -13,7 +13,11 @@ function collect_customer_data()
 
 
 
-    return validCustomerName && validDOB && validGender && validCustomerPhone;
+    return validCustomerName &&
+     validDOB && 
+     validGender && 
+     validCustomerPhone &&
+     validAddress;
 }
 
 function validateCustomerName()
@@ -85,7 +89,7 @@ function validateGender()
     }
 }
 
-    function validateCustomerPhone()
+function validateCustomerPhone()
 {
     let phone = document.getElementById("CustomerPhone").value.trim();
     let Error = document.getElementById("CustomerPhoneError");
@@ -98,6 +102,23 @@ function validateGender()
     else if(!/^(?:\+8801|01)[3-9]\d{8}$/.test(phone))
     {
         Error.innerHTML = "Please enter a valid Bangladeshi phone number";
+        return false;
+    }
+    else
+    {
+        Error.innerHTML = "";
+        return true;
+    }
+}
+
+function validateAddress()
+{
+    let address = document.getElementById("Address").value.trim();
+    let Error = document.getElementById("AddressError");
+
+    if(address=="")
+    {
+        Error.innerHTML = "Please Enter Address";
         return false;
     }
     else
