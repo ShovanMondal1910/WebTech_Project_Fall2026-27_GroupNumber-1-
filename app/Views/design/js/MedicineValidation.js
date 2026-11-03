@@ -2,6 +2,7 @@ function collect_medicine_data() {
     let validMedicineID = validateMedicineID();
     let validMedicineName = validateMedicineName();
     let validBrandName = validateBrandName();
+     let validImage = validateImage();
     let validGenericName = validateGenericName();
     let validCategory = validateCategory();
     let validStrength = validateStrength();
@@ -46,6 +47,21 @@ function validateMedicineName() {
     return false;
 }
 
+function validateImage() {
+    let imageInput = document.getElementById("image");
+    let error = document.getElementById("imageError");
+
+
+    if (!imageInput.files || imageInput.files.length === 0) {
+        error.innerHTML = "Please upload an image";
+        return false;
+   }
+   else
+   {
+    error.innerHTML = "";
+   }
+    return false;
+}
 function validateBrandName() {
     let brandName = document.getElementById("brandName").value;
     let Error = document.getElementById("brandNameError");
