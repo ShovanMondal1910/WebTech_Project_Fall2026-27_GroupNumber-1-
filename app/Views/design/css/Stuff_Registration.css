@@ -5,8 +5,8 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
-    color: black;
-    background-color: aliceblue;
+    color: #04202e;
+    background-color: #e8f6f4;
     max-width: 720px;
     margin: 0 auto;
     padding: 30px 20px;
@@ -17,29 +17,31 @@ body {
     width: 320px;
     height: auto;
     margin: 0 auto;
+    border: 3px solid #1fb58a;
     border-radius: 12px;
 }
 
 h1 {
     text-align: center;
-    color: blue;
-    border: 1px solid;
+    color: #3fe0c5;
+    background-color: #04202e;
+    border: 2px solid #1fb58a;
     padding-bottom: 13px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
-
 fieldset {
     background-color: #ffffff;
-    border: 2px solid black;
+    border: 2px solid #0e5a63;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 5px;
 }
 
 legend {
-    background-color: bisque;
-    border: 2px solid black;
+    background-color: #0e5a63;
+    color: #ffffff;
+    border: 2px solid #04202e;
     border-radius: 10px;
     padding: 12px 10px;
 }
@@ -58,6 +60,11 @@ td:first-child {
     width: 30%;
 }
 
+label {
+    color: #0e5a63;
+    font-weight: bold;
+}
+
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -68,19 +75,31 @@ select {
     padding: 8px 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
-    border: 1px solid;
+    color: #04202e;
+    background-color: #f4fbfa;
+    border: 2px solid #1fb58a;
     border-radius: 5px;
-    border-color: rgb(168, 66, 66);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    background-color: #ffffff;
+    border-color: #0e5a63;
+    outline: none;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
     margin: 10px 4px 0 10px;
-    accent-color: black;
+    accent-color: #1fb58a;
 }
 
 p {
-    color: red;
+    color: #d00000;
     font-weight: bold;
     font-size: 16px;
     margin: 5px 0 0 0;
@@ -103,13 +122,21 @@ input[type="reset"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: white;
-    background-color: black;
     text-align: center;
+}
+
+input[type="submit"] {
+    color: #04202e;
+    background-color: #1fb58a;
+}
+
+input[type="reset"] {
+    color: #ffffff;
+    background-color: #0e5a63;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: skyblue;
-    color: black;
+    color: #3fe0c5;
+    background-color: #04202e;
 }
