@@ -5,7 +5,7 @@ function collect_customer_data()
     let validGender = validateGender();
     let validCustomerPhone = validateCustomerPhone();
     let validAddress = validateAddress();
-    // let validFile = validateFile();
+    let validFile = validateFile();
     // let validCitizenship = validateCitizenship();
     // let validUsername = validateUsername();
     // let validEmail = validateEmail();
@@ -17,7 +17,8 @@ function collect_customer_data()
      validDOB && 
      validGender && 
      validCustomerPhone &&
-     validAddress;
+     validAddress &&
+     validFile;
 }
 
 function validateCustomerName()
@@ -126,4 +127,21 @@ function validateAddress()
         Error.innerHTML = "";
         return true;
     }
+}
+
+function validateFile() 
+{
+    let fileInput = document.getElementById("medicaldoc");
+    let Error = document.getElementById("fileError");
+
+    if (fileInput.files.length === 0)
+ {
+        Error.innerHTML = "Please select a file";
+        return false;
+    }
+    else
+    {
+        Error.innerHTML = "";
+        return true;
+ }
 }
