@@ -16,8 +16,8 @@
                 aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
 
         <ul class="nav-links" id="navLinks">
-            <li><a href="Navbar.html">Home</a></li>
-            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <!--<li><a href="admin.html">Dashboard</a></li>--->
         </ul>
     </nav>
     <br>
@@ -52,6 +52,7 @@
                             <input type="radio" name="gender" id="Male" value="Male"> <label for="Male"> Male </label>
                             <input type="radio" name="gender" id="Female" value="Female"> <label for="Female"> Female </label>
                             <input type="radio" name="gender" id="Other" value="Other"> <label for="Other"> Other </label>
+                            <br>
                             <span id ="ErrorGender"></span>
                         </td>
                     </tr>
@@ -90,10 +91,10 @@
                     <tr>
                         <td> <label> Can Manage : </label> </td>
                         <td>
-                        <input type="checkbox" name="manage[]" id="mDoctors" value="Doctors"> <label for="mDoctors"> Doctors </label>
-                        <input type="checkbox" name="manage[]" id="mNurses" value="Nurses"> <label for="mNurses">Nurses</label>
-                        <input type="checkbox" name="manage[]" id="mPatients" value="Patients"> <label for="mPatients"> Patients </label>
-                        <input type="checkbox" name="manage[]" id="mReports" value="Reports"> <label for="mReports"> Reports </label>
+                        <input type="checkbox" name="manage" id="mDoctors" value="Doctors"> <label for="mDoctors"> Doctors </label>
+                        <input type="checkbox" name="manage" id="mNurses" value="Nurses"> <label for="mNurses">Nurses</label>
+                        <input type="checkbox" name="manage" id="mPatients" value="Patients"> <label for="mPatients"> Patients </label>
+                        <input type="checkbox" name="manage" id="mReports" value="Reports"> <label for="mReports"> Reports </label>
                         <span id="ManageError"></span>
                         </td>
                     </tr>
@@ -117,7 +118,7 @@
 <tr>
     <td>
         <label for="password">Password:</label>
-        <span id="PasswordError"></span>
+        
     </td>
     <td>
         <div class="password-box">
@@ -137,6 +138,8 @@
                 👁
             </button>
         </div>
+        <span id="PasswordError"></span>
+
     </td>
 </tr>
 

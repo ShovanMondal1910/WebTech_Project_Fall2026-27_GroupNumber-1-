@@ -231,8 +231,17 @@ input[type="button"]:focus-visible {
     font-size: 18px;
     padding: 5px;
 }
-.error { color: red; font-size: 14px; }
-.ok { color: green; font-size: 14px; }
+.error
+{
+    color: red;
+    font-size: 14px;
+}
+.ok
+{ 
+    display: block;
+    color: green;
+    font-size: 14px;
+}
 
 .navbar {
     position: sticky;
