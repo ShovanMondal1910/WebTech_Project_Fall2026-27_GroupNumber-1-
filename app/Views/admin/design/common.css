@@ -5,7 +5,7 @@ html {
 }
 body
 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: clamp(16px, 1.1vw + 13px, 20px);
     line-height: 1.5;
     color: #111111;
@@ -38,10 +38,12 @@ body
 }
 h1 {
     text-align: center;
-    color: blue;
+    color: #0b2a5b;
     font-size: clamp(1.4rem, 4vw + 0.6rem, 2.1rem);
     background: #ffffff;
-    border: 1px solid blue;
+    border: 1px solid  #0b2a5b;
+    border-left: 6px solid #1e6fd9;
+    border-right: 6px solid  #1e6fd9;
     border-radius: 12px;
     padding: 14px 12px;
     margin: 0 0 8px;
@@ -55,8 +57,8 @@ p {
 }
 
 fieldset {
-    background: #ffffff;
-    border: 2px solid #111111;
+    background:#f4f8ff;
+    border: 2px solid #0b2a5b;
     border-radius: 12px;
     padding: clamp(14px, 3vw, 24px);
     margin: 0 0 16px;
@@ -64,8 +66,9 @@ fieldset {
     box-shadow: 0 8px 24px rgba(20, 40, 120, 0.12);
 }
 legend {
-    background: bisque;
-    border: 2px solid #111111;
+    background: #0b2a5b;
+    color: #ffffff;
+    border: 2px solid #0b2a5b;
     border-radius: 10px;
     padding: 8px 16px;
     font-weight: bold;
