@@ -1,182 +1,173 @@
-function collect_medicine_data()
-{
+function collect_medicine_data() {
     let validMedicineID = validateMedicineID();
     let validMedicineName = validateMedicineName();
     let validBrandName = validateBrandName();
     let validGenericName = validateGenericName();
     let validCategory = validateCategory();
     let validStrength = validateStrength();
+    let validDosage = validateDosage();
     let validBarcode = validateBarcode();
     let validUnit = validateUnit();
     let validSellingPrice = validateSellingPrice();
     let validInitialStock = validateInitialStock();
 
-   return false;
+    return false;
 }
 
-function validateMedicineID()
-{
+function validateMedicineID() {
     let medicineID = document.getElementById('medicineID').value;
     let Error = document.getElementById("medicineIdError");
 
-    if(medicineID === "")
-    {
+    if (medicineID === "") {
         Error.innerHTML = "Enter the medicineID";
     }
-    else if(medicineID.length < 8)
-    {
-        Error.innerHTML = "MedicineID must be at least 8 character ";
+    else if (medicineID.length < 8) {
+        Error.innerHTML = "MedicineID must be at least 6 character ";
     }
-    else
-    {
+    else {
         Error.innerHTML = "";
-    }    
+    }
     return false;
 }
 
-function validateMedicineName()
-{
+function validateMedicineName() {
     let medicineName = document.getElementById("medicineName").value;
     let Error = document.getElementById("medicineNameError");
 
-    if(medicineName == "" )
-    {
+    if (medicineName == "") {
         Error.innerHTML = "Enter medicine name";
     }
-    else if(medicineName.length<5)
-    {
-        Error.innerHTML = "Medicine name should be at least 5 charcter";
+    else if (medicineName.length < 5) {
+        Error.innerHTML = "Medicine name should be at least 3 charcter";
     }
-    else{
+    else {
         Error.innerHTML = "";
     }
     return false;
 }
-function validateBrandName()
-{
+
+function validateBrandName() {
     let brandName = document.getElementById("brandName").value;
     let Error = document.getElementById("brandNameError");
 
-    if(brandName == "" )
-    {
+    if (brandName == "") {
         Error.innerHTML = "Enter brand name";
     }
-    else{
+    else {
         Error.innerHTML = "";
     }
     return false;
 }
-function validateGenericName()
-{
+
+
+
+function validateGenericName() {
     let genericName = document.getElementById("genericName").value;
     let Error = document.getElementById("genericNameError");
 
-    if(genericName == "" )
-    {
+    if (genericName == "") {
         Error.innerHTML = "Enter generic name";
     }
-    else{
+    else {
         Error.innerHTML = "";
     }
     return false;
 }
 
-function validateCategory()
-{
+function validateCategory() {
     let category = document.getElementById("category").value;
     let Error = document.getElementById("categoryError");
 
-    if (category == "Select Category" || category == "")
-    {
+    if (category == "Select Category" || category == "") {
         Error.innerHTML = "Please select a category";
     }
-    else
-    {
+    else {
         Error.innerHTML = "";
     }
     return false;
 }
 
-function validateStrength()
-{
+function validateStrength() {
     let strength = document.getElementById("strength").value;
     let Error = document.getElementById("strengthError");
 
-    if(strength == "" )
-    {
+    if (strength == "") {
         Error.innerHTML = "Enter strength";
     }
-    else{
+    else {
         Error.innerHTML = "";
     }
     return false;
 }
 
-function validateBarcode()
-{
+function validateDosage() {
+    let dosage = document.getElementById("dosage").value;
+    let Error = document.getElementById("dosageError");
+
+    if (dosage == "Select Dosage" || dosage == "") {
+        Error.innerHTML = "Enter Dosage";
+    }
+    else {
+        Error.innerHTML = "";
+    }
+    return false;
+}
+
+function validateBarcode() {
     let barcode = document.getElementById("barcode").value;
     let Error = document.getElementById("barcodeError");
 
-    if(barcode == "" )
-    {
+    if (barcode == "") {
         Error.innerHTML = "Enter barcode";
     }
-    else{
+    else {
         Error.innerHTML = "";
     }
     return false;
 }
 
-function validateUnit()
-{
+function validateUnit() {
     let units = document.querySelectorAll('input[name="unitName"]');
     let UnitError = document.getElementById("unitNameError");
     let selectUnit = "";
 
-    for(let i=0; i<units.length; i++)
-    {
-        if(units[i].checked)
-        {
+    for (let i = 0; i < units.length; i++) {
+        if (units[i].checked) {
             selectUnit = units[i].value;
             break;
         }
     }
-    if(selectUnit=="")
-    {
+    if (selectUnit == "") {
         UnitError.innerHTML = "Please Enter the Unit Name";
         return false;
     }
-    else{
-        UnitError.innerHTML = "Unit Name: "+selectUnit;
+    else {
+        UnitError.innerHTML = "Unit Name: " + selectUnit;
         return true;
     }
 }
 
-function validateSellingPrice()
-{
+function validateSellingPrice() {
     let sellingPrice = document.getElementById("sellingPrice").value;
     let Error = document.getElementById("sellingPriceError");
 
-    if(sellingPrice == "" )
-    {
+    if (sellingPrice == "") {
         Error.innerHTML = "Enter selling price";
     }
-    else{
+    else {
         Error.innerHTML = "";
     }
     return false;
 }
 
-function validateInitialStock()
-{
+function validateInitialStock() {
     let initialStock = document.getElementById("initialStock").value;
     let Error = document.getElementById("initialStockError");
 
-    if(initialStock == "" )
-    {
+    if (initialStock == "") {
         Error.innerHTML = "Enter initial stock";
     }
-    else{
+    else {
         Error.innerHTML = "";
     }
     return false;
