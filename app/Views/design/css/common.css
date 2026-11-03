@@ -12,15 +12,6 @@ body {
     padding: 30px 20px;
 }
 
-#logo {
-    display: block;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
 h1 {
     text-align: center;
     color: blue;
