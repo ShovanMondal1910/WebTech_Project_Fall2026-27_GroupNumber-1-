@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="../design/css/common.css">
+    <script src="../design/js/DoctorValidation.js" defer></script>
+</head>
+
+<body>
+    <a href="../index.html" class="back-btn">Back</a>
+    <img src="../design/images/logo.png" id="logo" alt="Logo">
+    <br>
+    <h1>Add Doctor</h1>
+    <form id="doctorForm" action="" method="post" onsubmit="return validateDoctorForm()">
+        <fieldset>
+            <legend>Doctor Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label for="doctorName">Doctor Name :</label></td>
+                    <td>
+                        <input type="text" name="doctorName" id="doctorName" placeholder="Enter Doctor Full Name">
+                        <p id="DoctorNameError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="dob">Date of Birth :</label></td>
+                    <td>
+                        <input type="date" name="dob" id="dob">
+                        <p id="DobError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender :</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male"> Male
+                        <input type="radio" name="gender" id="female" value="Female"> Female
+                        <input type="radio" name="gender" id="other" value="Other"> Other
+                        <p id="GenderError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Phone :</label></td>
+                    <td>
+                        <input type="text" name="phone" id="phone" placeholder="Enter Contact Number (e.g., 017xxxxxxxx)">
+                        <p id="PhoneError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email Address :</label></td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address">
+                        <p id="EmailError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Address :</label></td>
+                    <td>
+                        <textarea name="address" id="address" rows="4" placeholder="Enter Chamber or Residential Address"></textarea>
+                        <p id="AddressError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="doctorImage">Profile Photo :</label></td>
+                    <td>
+                        <input type="file" name="doctorImage" id="doctorImage" accept="image/*">
+                        <p id="ImageError" class="Errors"></p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Professional Details</legend>
+            <table>
+                <tr>
+                    <td><label for="licenseNo">License No :</label></td>
+                    <td>
+                        <input type="text" name="licenseNo" id="licenseNo" placeholder="Enter Medical Registration / License No">
+                        <p id="LicenseError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="specialization">Specialization :</label></td>
+                    <td>
+                        <select name="specialization" id="specialization">
+                            <option value="">Select Specialization</option>
+                            <option value="General Physician">General Physician / Medicine</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Pediatrics">Pediatrics (Child Specialist)</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Gynecology & Obstetrics">Gynecology & Obstetrics</option>
+                            <option value="ENT">ENT (Ear, Nose & Throat)</option>
+                            <option value="Ophthalmology">Ophthalmology (Eye)</option>
+                            <option value="Psychiatry">Psychiatry</option>
+                            <option value="Gastroenterology">Gastroenterology</option>
+                            <option value="Dentistry">Dentistry</option>
+                        </select>
+                        <p id="SpecializationError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="qualification">Degrees :</label></td>
+                    <td>
+                        <input type="text" name="qualification" id="qualification" placeholder="e.g., MBBS, FCPS, MD, MS">
+                        <p id="QualificationError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="designation">Designation :</label></td>
+                    <td>
+                        <select name="designation" id="designation">
+                            <option value="">Select Designation</option>
+                            <option value="Medical Officer">Medical Officer</option>
+                            <option value="Resident Physician">Resident Physician</option>
+                            <option value="Consultant">Consultant</option>
+                            <option value="Senior Consultant">Senior Consultant</option>
+                            <option value="Assistant Professor">Assistant Professor</option>
+                            <option value="Associate Professor">Associate Professor</option>
+                            <option value="Professor">Professor</option>
+                        </select>
+                        <p id="DesignationError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="hospital">Hospita :</label></td>
+                    <td>
+                        <input type="text" name="hospital" id="hospital" placeholder="Enter Hospital or Clinic Name">
+                        <p id="HospitalError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Visiting Days :</label></td>
+                    <td>
+                        <input type="checkbox" name="visitingDays" id="sat" value="Saturday"> Sat
+                        <input type="checkbox" name="visitingDays" id="sun" value="Sunday"> Sun
+                        <input type="checkbox" name="visitingDays" id="mon" value="Monday"> Mon
+                        <input type="checkbox" name="visitingDays" id="tue" value="Tuesday"> Tue
+                        <input type="checkbox" name="visitingDays" id="wed" value="Wednesday"> Wed
+                        <input type="checkbox" name="visitingDays" id="thu" value="Thursday"> Thu
+                        <input type="checkbox" name="visitingDays" id="fri" value="Friday"> Fri
+                        <p id="VisitingDaysError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="visitingHours">Visiting Hours :</label></td>
+                    <td>
+                        <input type="text" name="visitingHours" id="visitingHours" placeholder="e.g., 05:00 PM - 09:00 PM">
+                        <p id="VisitingHoursError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="consultationFee">Consultation Fee (Tk) :</label></td>
+                    <td>
+                        <input type="number" name="consultationFee" id="consultationFee" placeholder="Enter Consultation Fee (e.g., 800)" min="0">
+                        <p id="FeeError" class="Errors"></p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Doctor Account Credentials</legend>
+            <table>
+                <tr>
+                    <td><label for="username">Username :</label></td>
+                    <td>
+                        <input type="text" name="username" id="username" placeholder="Choose a username">
+                        <p id="UsernameError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password :</label></td>
+                    <td>
+                        <input type="password" name="password" id="password" placeholder="Enter user password">
+                        <p id="PasswordError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="confirmPassword">Confirm Password :</label></td>
+                    <td>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-enter password">
+                        <p id="ConfirmPasswordError" class="Errors"></p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        
+        <div class="button-group">
+            <input type="submit" id="submit" value="Add Doctor">
+            <input type="reset" id="reset" value="Reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
