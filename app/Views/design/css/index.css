@@ -60,9 +60,10 @@ a {
 }
 
 .admin .header,   .admin legend,   .admin #submit,   .admin .user-btn   { background-color: #1f3a5f; }
+.doctor .header, .doctor legend, .doctor #submit, .doctor .user-btn { background-color: #a4541c; }
 .stuff .header,   .stuff legend,   .stuff #submit,   .stuff .user-btn   { background-color: #0f6e6e; }
 .customer .header, .customer legend, .customer #submit, .customer .user-btn { background-color: #6a3d8f; }
-.medicine .header, .medicine legend, .medicine #submit, .medicine .user-btn { background-color: #a4541c; }
+.medicine .header, .medicine legend, .medicine #submit, .medicine .user-btn { background-color: #50e3a6; }
 
 .user-grid {
     display: flex;
@@ -90,9 +91,10 @@ a {
 }
 
 .user-card.admin    { border-top-color: #1f3a5f; }
+.user-card.doctor { border-top-color: #a4541c; }
 .user-card.stuff    { border-top-color: #0f6e6e; }
 .user-card.customer { border-top-color: #6a3d8f; }
-.user-card.medicine { border-top-color: #a4541c; }
+.user-card.medicine { border-top-color: #50e3a6; }
 
 .user-btn {
     width: 100%;
