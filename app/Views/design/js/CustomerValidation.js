@@ -47,3 +47,8 @@ function validateCustomerName()
     
     
 }
+
+function validateDOB()
+{
+    let dob = document.getElementById("dob").value;
+    let Error = document.getElementById("dobError");}
