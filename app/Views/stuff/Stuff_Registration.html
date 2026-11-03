@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../design/css/common.css">
+    <title>Stuff Registration</title>
     <link rel="stylesheet" href="../design/css/Stuff_Registration.css">
     <script src="../design/js/Stuff_Registration.js" defer></script>
-    <title>Stuff Registration</title>
 </head>
+
 <body>
-    <div class="topnav">
-        <a href="Stuff_Registration.html" class="active">Stuff Registration</a>
-        <a href="ViewAllStuffs.html">View All Stuffs</a>
-        <a href="UpdateStuff.html">Update Stuff</a>
-    </div>
- 
-    <img src="../design/images/logo.png" id="logo" alt="">
+    <img src="../design/images/logo.png" id="logo" alt="Logo">
     <br>
     <h1>Stuff Registration</h1>
- 
+
     <form id="stuffForm" action="" method="post">
+
         <fieldset>
             <legend> Stuff Personal Information </legend>
             <table>
@@ -52,6 +48,13 @@
                         <p id="PhoneError"></p>
                     </td>
                 </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend> Stuff Job Information </legend>
+            <table>
                 <tr>
                     <td><label for="department"> Department : </label></td>
                     <td>
@@ -96,7 +99,7 @@
             </table>
         </fieldset>
         <br>
- 
+
         <fieldset>
             <legend> User Credentials </legend>
             <table>
@@ -121,15 +124,24 @@
                         <p id="PasswordError"></p>
                     </td>
                 </tr>
+                <tr>
+                    <td><label for="confirmPassword"> Confirm Password : </label></td>
+                    <td>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm user password">
+                        <p id="ConfirmPasswordError"></p>
+                    </td>
+                </tr>
             </table>
         </fieldset>
         <br>
- 
+
         <div class="button-group">
             <input type="submit" id="submit" value="Create Stuff">
             <input type="reset" id="reset" value="Reset">
         </div>
-    </form>
-</body>
-</html>
 
+    </form>
+
+</body>
+
+</html>

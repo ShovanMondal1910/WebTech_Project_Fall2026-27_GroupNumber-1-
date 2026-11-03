@@ -30,7 +30,8 @@ Admin:
     gender,
     phone,
     address,
-    designation
+    designation,
+    permissions
     
 Stuff:
     stuffId(PK),
