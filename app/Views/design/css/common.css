@@ -6,7 +6,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     color: black;
-    background-color: aliceblue;
+    background-color: rgb(154, 190, 221);
     max-width: 720px;
     margin: 0 auto;
     padding: 30px 20px;
@@ -31,7 +31,7 @@ h1 {
 }
 
 fieldset {
-    background-color: #ffffff;
+    background-color: rgb(154, 190, 221);
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
@@ -39,7 +39,7 @@ fieldset {
 }
 
 legend {
-    background-color: bisque;
+    background-color: rgb(225, 166, 93);
     border: 2px solid black;
     border-radius: 7px;
     padding: 12px 10px;
@@ -101,7 +101,7 @@ input[type="reset"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: white;
+    color: rgb(154, 190, 221);
     background-color: black;
     text-align: center;
 }
