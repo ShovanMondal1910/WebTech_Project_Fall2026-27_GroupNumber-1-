@@ -32,6 +32,22 @@ Admin:
     address,
     designation,
     permissions
+
+Doctor:
+    doctorId(PK),
+    userId(FK),
+    name,
+    dob,
+    gender,
+    phone,
+    address,
+    licenseNo,
+    specialization,
+    degree,
+    designation,
+    visitingDays,
+    visitingHours,
+    consultationFee
     
 Stuff:
     stuffId(PK),
