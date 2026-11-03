@@ -225,6 +225,25 @@ function validate_password() {
         return true;
     }
 }
+// Confirm Password
+function validate_confirm_password() {
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    let error = document.getElementById("ConfirmPasswordError");
+
+    if (confirmPassword === "") {
+        error.innerHTML = "Please confirm your password";
+        return false;
+    }
+    else if (password !== confirmPassword) {
+        error.innerHTML = "Passwords do not match";
+        return false;
+    }
+    else {
+        error.innerHTML = "";
+        return true;
+    }
+}
 
 function collect_data() {
     let a = validate_name();
@@ -238,8 +257,9 @@ function collect_data() {
     let i = validate_username();
     let j = validate_email();
     let k = validate_password();
+    let l = validate_confirm_password();
 
-    return a && b && c && d && e && f && g && h && i && j && k;
+    return a && b && c && d && e && f && g && h && i && j && k && l;
 }
 
 function clear_messages() {
