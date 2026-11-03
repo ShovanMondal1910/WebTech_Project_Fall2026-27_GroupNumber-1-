@@ -94,6 +94,24 @@ function validate_phone() {
     }
 }
 
+function validate_address() {
+    let address = document.getElementById("address").value.trim();
+    let error = document.getElementById("AddressError");
+
+    if (address === "") {
+        error.innerHTML = "Address is required";
+        return false;
+    }
+    else if (address.length < 8) {
+        error.innerHTML = "Address must be at least 8 characters";
+        return false;
+    }
+    else {
+        error.innerHTML = "";
+        return true;
+    }
+}
+
 function validate_department() {
     let department = document.getElementById("department").value.trim();
     let error = document.getElementById("DeptError");
@@ -225,7 +243,7 @@ function validate_password() {
         return true;
     }
 }
-// Confirm Password
+
 function validate_confirm_password() {
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirmPassword").value;
@@ -258,8 +276,9 @@ function collect_data() {
     let j = validate_email();
     let k = validate_password();
     let l = validate_confirm_password();
+    let m = validate_address();
 
-    return a && b && c && d && e && f && g && h && i && j && k && l;
+    return a && b && c && d && e && f && g && h && i && j && k && l && m;
 }
 
 function clear_messages() {

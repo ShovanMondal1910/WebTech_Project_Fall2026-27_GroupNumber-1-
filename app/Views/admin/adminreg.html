@@ -16,8 +16,8 @@
                 aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
 
         <ul class="nav-links" id="navLinks">
-            <li><a href="Navbar.html">Home</a></li>
-            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <!--<li><a href="admin.html">Dashboard</a></li>--->
         </ul>
     </nav>
     <br>
@@ -52,6 +52,7 @@
                             <input type="radio" name="gender" id="Male" value="Male"> <label for="Male"> Male </label>
                             <input type="radio" name="gender" id="Female" value="Female"> <label for="Female"> Female </label>
                             <input type="radio" name="gender" id="Other" value="Other"> <label for="Other"> Other </label>
+                            <br>
                             <span id ="ErrorGender"></span>
                         </td>
                     </tr>
@@ -71,6 +72,30 @@
                             <textarea name="Address" id="Address" cols="20" rows="5" style="resize: none;" placeholder="Enter Your Address" required></textarea>
                                     <span id="AddressError"></span>
 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Designation">Designation :</label>
+                        </td>
+                        <td>
+                            <select name="Designation" id="Designation" required>
+                                <option value="">-- Select Designation--</option>
+                                <option value="Super Admin">Super Admin</option>
+                                <option value="Sales Admin">Sales Admin</option>
+                                <option value="Hr Admin">Hr Admin</option>
+                            </select>
+                            <span id="DesignationError"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Can Manage : </label> </td>
+                        <td>
+                        <input type="checkbox" name="manage" id="mDoctors" value="Doctors"> <label for="mDoctors"> Doctors </label>
+                        <input type="checkbox" name="manage" id="mNurses" value="Nurses"> <label for="mNurses">Nurses</label>
+                        <input type="checkbox" name="manage" id="mPatients" value="Patients"> <label for="mPatients"> Patients </label>
+                        <input type="checkbox" name="manage" id="mReports" value="Reports"> <label for="mReports"> Reports </label>
+                        <span id="ManageError"></span>
                         </td>
                     </tr>
                 </table>
@@ -93,7 +118,7 @@
 <tr>
     <td>
         <label for="password">Password:</label>
-        <span id="PasswordError"></span>
+        
     </td>
     <td>
         <div class="password-box">
@@ -113,26 +138,26 @@
                 👁
             </button>
         </div>
+        <span id="PasswordError"></span>
+
     </td>
 </tr>
 
             </table>
         </fieldset>
-  <div class="button-group">
+<div class="button-group">
     <input type="submit" id="submit" value="Add Admin">
     <input type="reset" id="reset" value="Reset">
 </div>
         </form>
+        <!--------
         
 <footer>
         <div class="footer-grid">
-            <!-- About -->
             <div class="footer-section">
                 <h3>About Us</h3>
                 <p>We provide quality healthcare services to our community, with a team of dedicated doctors, nurses, and staff available 24/7.</p>
             </div>
-
-            <!-- Quick Links -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
@@ -142,8 +167,6 @@
                     <li><a href="#">Emergency</a></li>
                 </ul>
             </div>
-
-            <!-- Contact -->
             <div class="footer-section">
                 <h3>Contact</h3>
                 <address>
@@ -153,8 +176,6 @@
                     Email: info@hospital.bd
                 </address>
             </div>
-
-            <!-- Hours -->
             <div class="footer-section">
                 <h3>Working Hours</h3>
                 <p>
@@ -171,6 +192,7 @@
             &copy; 2026 City Hospital. All rights reserved.
         </div>
     </footer>
+------>
 
 
 </body>

@@ -7,12 +7,14 @@ function collect_data()
     let validAddress = validateAddress();
     let validUsername = validateUsername();
     let validEmail = validateEmail();
+    let validDisgnation =validateDesignation();
+    let validManage =validateManage();
     let validPassword = validatePassword();
 
     if (validName && validDOB && validGender && validPhone &&
-        validAddress && validUsername && validEmail && validPassword)
+        validAddress && validDisgnation && validManage &&   validUsername && validEmail && validPassword)
     {
-        alert("Admin Registration Successful!");
+        alert("Admin Added Successful!");
         return false;
     }
     return false;
@@ -131,6 +133,40 @@ function validateAddress()
     return true;
 }
 
+function validateDesignation()
+{
+let designation=document.getElementById("Designation").value;
+if(designation === "")
+{
+    setError("DesignationError","Please Select a Designation");
+    return false;
+}
+setError("DesignationError","");
+console.log("Designation:", designation);
+return true;
+}
+
+function validateManage()
+{
+let boxes=document.querySelectorAll('input[name="manage"]')
+let selectedlist=[];
+for(let i=0;i < boxes.length;i++)
+{
+    if(boxes[i].checked)
+    {
+        selectedlist.push(boxes[i].value);
+    }
+}
+if(selectedlist.length === 0)
+{
+    setError("ManageError", "Select At Least One Option");
+    return false;
+}
+setError("ManageError", "");
+    console.log("Can Manage:", selectedlist.join(", "));
+    return true;
+}
+
 function validateUsername()
 {
     let username = document.getElementById("username").value.trim();
@@ -214,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function ()
     document.querySelector("form").addEventListener("reset", function ()
     {
         let ids = ["NameError", "DOBError", "ErrorGender", "PhoneError",
-                "AddressError", "UsernameError", "EmailError", "PasswordError"];
+                "AddressError", "DesignationError" , "ManageError" , "UsernameError", "EmailError", "PasswordError"];
         for (let i = 0; i < ids.length; i++)
         {
             setError(ids[i], "");

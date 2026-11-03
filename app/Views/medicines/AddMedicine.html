@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <a href="../index.html" class="back-btn">Back</a>
     <h1>Add Medicine</h1>
     <form action="" onsubmit="return collect_medicine_data()">
         <fieldset>
@@ -29,7 +30,8 @@
                 </tr>
                 <tr>
                     <td><label for="image">Image : </label></td>
-                    <td><input type="file" id="image" name="image" placeholder="Upload Image"></td>
+                    <td><input type="file" id="image" name="image" placeholder="Upload Image">
+                    <p id="imageError" class="Errors"></p></td>
                 </tr>
                 <tr>
                     <td><label for="brandName">Brand Name : </label></td>
@@ -78,14 +80,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="dosageForm">Dosage Form : </label></td>
+                    <td><label for="dosageForm">Dosage : </label></td>
                     <td>
-                        <select name="" id="">
-                            <option value="" selected disabled>Select Dosage Form</option>
-                            <option value="">Tablet</option>
-                            <option value="">Cream</option>
-                            <option value="">Capsule</option>
-                            <option value="">Syrup</option>
+                        <select name="dosage" id="dosage">
+                            <option value="Select Dosage" selected disabled>Select Dosage</option>
+                            <option value="Tablet">Tablet</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Capsule">Capsule</option>
+                            <!-- <option value="">Syrup</option>
                             <option value="">Injection</option>
                             <option value="">Ointment</option>
                             <option value="">Drops</option>
@@ -95,7 +97,9 @@
                             <option value="">Patches</option>
                             <option value="">Vitamins</option>
                             <option value="">Supplements</option>
+                             -->
                         </select>
+                        <p id="dosageError" class="Errors"></p>
                     </td>
                 </tr>
                 <tr>
@@ -112,7 +116,7 @@
                 </tr>
                 <tr>
                     <td><label for="barcode">Barcode : </label></td>
-                    <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode">                    
+                    <td><input type="text" id="barcode" name="barcode" placeholder="Enter Barcode">
                         <p id="barcodeError" class="Errors"></p>
                     </td>
                 </tr>
