@@ -1,3 +1,18 @@
+/* =====================================================
+   Stuff_Registration.css
+   All CSS of Stuff_Registration.html is in this file
+   (common.css is NOT used by this page)
+
+   Colors (taken from the Medi-Life Pharma logo):
+   dark navy    : #04202e
+   dark teal    : #0e5a63
+   green        : #1fb58a
+   light cyan   : #3fe0c5
+   light mint   : #e8f6f4
+   ===================================================== */
+
+
+/* ---------- 1. Basic page setup ---------- */
 * {
     box-sizing: content-box;
 }
@@ -12,6 +27,36 @@ body {
     padding: 30px 20px;
 }
 
+
+/* ---------- 2. Navigation bar ---------- */
+.topnav {
+    background-color: #04202e;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 4px solid #1fb58a;
+    margin-bottom: 20px;
+}
+
+.topnav a {
+    color: #e8f6f4;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.topnav a:hover {
+    background-color: #0e5a63;
+    color: #3fe0c5;
+}
+
+.topnav a.active {
+    background-color: #1fb58a;
+    color: #04202e;
+}
+
+
+/* ---------- 3. Logo and heading ---------- */
 #logo {
     display: block;
     width: 320px;
@@ -30,6 +75,9 @@ h1 {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+
+
+/* ---------- 4. Fieldset, legend and table ---------- */
 fieldset {
     background-color: #ffffff;
     border: 2px solid #0e5a63;
@@ -56,6 +104,7 @@ td {
     vertical-align: top;
 }
 
+/* label column has the same width in every fieldset */
 td:first-child {
     width: 30%;
 }
@@ -65,12 +114,15 @@ label {
     font-weight: bold;
 }
 
+
+/* ---------- 5. Input fields ---------- */
 input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="password"],
 input[type="date"],
-select {
+select,
+textarea {
     width: 90%;
     padding: 8px 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -86,10 +138,15 @@ input[type="number"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
-select:focus {
+select:focus,
+textarea:focus {
     background-color: #ffffff;
     border-color: #0e5a63;
     outline: none;
+}
+
+textarea {
+    resize: none;
 }
 
 input[type="radio"],
@@ -98,6 +155,8 @@ input[type="checkbox"] {
     accent-color: #1fb58a;
 }
 
+
+/* ---------- 6. Error messages ---------- */
 p {
     color: #d00000;
     font-weight: bold;
@@ -105,6 +164,8 @@ p {
     margin: 5px 0 0 0;
 }
 
+
+/* ---------- 7. Buttons ---------- */
 .button-group {
     display: flex;
     gap: 12px;

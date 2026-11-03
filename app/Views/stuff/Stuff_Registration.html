@@ -10,12 +10,23 @@
 </head>
 
 <body>
+
+    <!-- Navigation bar -->
+    <div class="topnav">
+        <a href="Stuff_Registration.html" class="active">Stuff Registration</a>
+        <a href="ViewAllStuffs.html">View All Stuffs</a>
+        <a href="UpdateStuff.html">Update Stuff</a>
+    </div>
+
+    <!-- Logo and heading -->
     <img src="../design/images/logo.png" id="logo" alt="Logo">
     <br>
     <h1>Stuff Registration</h1>
 
+    <!-- Registration form -->
     <form id="stuffForm" action="" method="post">
 
+        <!-- Part 1 : Personal information -->
         <fieldset>
             <legend> Stuff Personal Information </legend>
             <table>
@@ -48,10 +59,18 @@
                         <p id="PhoneError"></p>
                     </td>
                 </tr>
+                <tr>
+                    <td><label for="address"> Address : </label></td>
+                    <td>
+                        <textarea name="address" id="address" rows="4" placeholder="Enter Your Address"></textarea>
+                        <p id="AddressError"></p>
+                    </td>
+                </tr>
             </table>
         </fieldset>
         <br>
 
+        <!-- Part 2 : Job information -->
         <fieldset>
             <legend> Stuff Job Information </legend>
             <table>
@@ -100,6 +119,7 @@
         </fieldset>
         <br>
 
+        <!-- Part 3 : User credentials -->
         <fieldset>
             <legend> User Credentials </legend>
             <table>
@@ -127,7 +147,7 @@
                 <tr>
                     <td><label for="confirmPassword"> Confirm Password : </label></td>
                     <td>
-                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm user password">
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter password again">
                         <p id="ConfirmPasswordError"></p>
                     </td>
                 </tr>
@@ -135,6 +155,7 @@
         </fieldset>
         <br>
 
+        <!-- Buttons -->
         <div class="button-group">
             <input type="submit" id="submit" value="Create Stuff">
             <input type="reset" id="reset" value="Reset">
