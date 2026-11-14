@@ -39,18 +39,33 @@ function validateDoctorName() {
     return false;
 }
 
-function validateDOB() {
-    let dob = document.getElementById("dob").value;
-    let Error = document.getElementById("DobError");
+function validateDOB() { 
+    let dob = document.getElementById("dob").value; 
+    let Error = document.getElementById("DobError"); 
 
-    if (dob == "") {
-        Error.innerHTML = "Select date of birth";
+    if (dob === "") { 
+        Error.innerHTML = "Select date of birth"; 
+        return false; 
+    } 
+    let dobDate = new Date(dob);
+    let today = new Date();
+    
+    let age = today.getFullYear() - dobDate.getFullYear();
+    let monthDiff = today.getMonth() - dobDate.getMonth();
+    
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dobDate.getDate())) {
+        age--;
     }
-    else {
+
+    if (age <= 25) { 
+        Error.innerHTML = "Age must be greater than 25 years old."; 
+        return false;
+    } else { 
         Error.innerHTML = "";
-    }
-    return false;
+        return true;
+    } 
 }
+
 
 function validateGender() {
     let genders = document.querySelectorAll('input[name="gender"]');
@@ -80,6 +95,10 @@ function validatePhone() {
     if (phone == "") {
         Error.innerHTML = "Enter phone number";
     }
+    else if (!phone.startsWith("01")) {
+        Error.innerHTML = "Phone number must start with 01";
+        return false;
+    }
     else if (phone.length < 11) {
         Error.innerHTML = "Phone number must be at least 11 digits";
     }
@@ -93,8 +112,15 @@ function validateEmail() {
     let email = document.getElementById("email").value;
     let Error = document.getElementById("EmailError");
 
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
     if (email == "") {
         Error.innerHTML = "Enter email address";
+    }
+   
+    else if (!emailPattern.test(email)) {
+        Error.innerHTML = "Enter a valid email address (e.g., name@example.com)";
+        return false;
     }
     else {
         Error.innerHTML = "";
