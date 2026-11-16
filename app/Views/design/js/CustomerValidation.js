@@ -6,7 +6,7 @@ function collect_customer_data()
     let validCustomerPhone = validateCustomerPhone();
     let validAddress = validateAddress();
     let validFile = validateFile();
-    // let validCitizenship = validateCitizenship();
+    let validCitizenship = validateCitizenship();
     // let validUsername = validateUsername();
     // let validEmail = validateEmail();
     // let validPassword = validatePassword();
@@ -18,7 +18,8 @@ function collect_customer_data()
      validGender && 
      validCustomerPhone &&
      validAddress &&
-     validFile;
+     validFile &&
+     validCitizenship;
 }
 
 function validateCustomerName()
@@ -144,4 +145,21 @@ function validateFile()
         Error.innerHTML = "";
         return true;
  }
+
+}
+
+function validateCitizenship() {
+    let citizenship = document.getElementById("Citizen").value;
+    let Error = document.getElementById("citizenError");
+
+    if (citizenship == "") 
+    {
+        Error.innerHTML = "Please select your citizenship";
+        return false;
+    }
+    else
+    {
+        Error.innerHTML = "";
+        return true;
+    }
 }
