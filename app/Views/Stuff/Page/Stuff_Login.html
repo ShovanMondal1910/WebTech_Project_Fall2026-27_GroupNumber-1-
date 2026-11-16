@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuff Login</title>
+    <link rel="stylesheet" href="../Design/Stuff_Login.css">
+    <script src="../JS/Stuff_Login.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Back button (to Home page) -->
+    <a href="../../index.html">
+        <button type="button" id="back">Back</button>
+    </a>
+
+    <!-- Logo and heading -->
+    <img src="../../design/images/logo.png" id="logo" alt="Logo">
+    <br>
+    <h1>Stuff Login</h1>
+
+    <!-- Login form -->
+    <form id="loginForm" action="" method="post">
+
+        <fieldset>
+            <legend> Login Information </legend>
+            <table>
+                <tr>
+                    <td><label for="username"> User Name : </label></td>
+                    <td>
+                        <input type="text" name="username" id="username" placeholder="Enter username">
+                        <p id="UsernameError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password"> Password : </label></td>
+                    <td>
+                        <input type="password" name="password" id="password" placeholder="Enter password">
+                        <p id="PasswordError"></p>
+                    </td>
+                </tr>
+            </table>
+            <p id="LoginError"></p>
+        </fieldset>
+        <br>
+
+        <!-- Login button -->
+        <div class="button-group">
+            <input type="submit" id="login" value="Login">
+        </div>
+
+    </form>
+
+    <!-- Link for new user -->
+    <div class="register-text">
+        New user? <a href="Stuff_Registration.html">Register here</a>
+    </div>
+
+</body>
+
+</html>

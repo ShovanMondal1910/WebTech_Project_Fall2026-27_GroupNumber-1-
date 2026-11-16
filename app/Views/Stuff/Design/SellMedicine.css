@@ -1,0 +1,186 @@
+/* SellMedicine.css - all CSS of SellMedicine.html is in this file */
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #04202e;
+    background-color: #e8f6f4;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#logo {
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid #1fb58a;
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    color: #3fe0c5;
+    background-color: #04202e;
+    border: 2px solid #1fb58a;
+    padding-bottom: 13px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+fieldset {
+    background-color: #ffffff;
+    border: 2px solid #0e5a63;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+legend {
+    background-color: #0e5a63;
+    color: #ffffff;
+    border: 2px solid #04202e;
+    border-radius: 10px;
+    padding: 12px 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px 6px;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 30%;
+}
+
+label {
+    color: #0e5a63;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 90%;
+    padding: 8px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: #04202e;
+    background-color: #f4fbfa;
+    border: 2px solid #1fb58a;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    background-color: #ffffff;
+    border-color: #0e5a63;
+    outline: none;
+}
+
+/* Price, stock and total can not be typed, they are filled automatically */
+input[readonly] {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+/* Error message (red) */
+p {
+    color: #d00000;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+
+/* Success message (green) */
+p.success {
+    color: #1a9a3c;
+}
+
+#BillMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type="button"] {
+    color: #ffffff;
+    background-color: #0e5a63;
+}
+
+input[type="submit"] {
+    color: #04202e;
+    background-color: #1fb58a;
+}
+
+input[type="reset"] {
+    color: #ffffff;
+    background-color: #2c3e50;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    color: #3fe0c5;
+    background-color: #04202e;
+}
+
+.topnav {
+    background-color: #2c3e50;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #34495e;
+}
+
+.topnav a.active {
+    background-color: #27ae60;
+    font-weight: bold;
+}
