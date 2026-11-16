@@ -12,8 +12,12 @@ body {
 
 /* ── Navbar ── */
 .navbar {
-    background-color: #333;
     padding: 8px 12px;
+    overflow: hiddenauto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    
 }
 
 .nav-links {
@@ -21,6 +25,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
+    justify-content: center;
 }
 
 .nav-links li {

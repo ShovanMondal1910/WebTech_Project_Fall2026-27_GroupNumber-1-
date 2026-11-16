@@ -111,18 +111,20 @@ input[type="reset"]:hover
 
 input[type="button"] {
     box-sizing: border-box;
-    padding: 8px 14px;
+    /* padding: 8px 14px; */
     font-size: 14px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
     color: white;
-    background-color: black;
-    margin-top: 4px;
+    background-color: rgb(47, 1, 255);
+    /* margin-top: 4px; */
+    height: 37px;
+    width: 100px;
 }
 input[type="button"]:hover {
-    background-color: skyblue;
+    background-color: rgb(155, 208, 155);
     color: black;
 }
 
