@@ -1,0 +1,115 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #04202e;
+    background-color: #e8f6f4;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#logo {
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid #1fb58a;
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    color: #3fe0c5;
+    background-color: #04202e;
+    border: 2px solid #1fb58a;
+    padding-bottom: 13px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#greeting {
+    text-align: center;
+    color: #0e5a63;
+    margin-bottom: 25px;
+}
+
+.stuff-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stuff-card {
+    flex: 1;
+    min-width: 180px;
+    background-color: #ffffff;
+    border: 2px solid #0e5a63;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stuff-card:hover {
+    background-color: #f4fbfa;
+    border-color: #1fb58a;
+}
+
+.stuff-card h3 {
+    color: #0e5a63;
+    margin-top: 0;
+}
+
+.stuff-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.stuff-card a,
+.bottom-buttons a {
+    text-decoration: none;
+}
+
+.card-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #04202e;
+    background-color: #1fb58a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    color: #3fe0c5;
+    background-color: #04202e;
+}
+
+.bottom-buttons {
+    text-align: center;
+}
+
+#home,
+#logout {
+    padding: 10px 25px;
+    margin: 0 6px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    background-color: #0e5a63;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home:hover,
+#logout:hover {
+    color: #3fe0c5;
+    background-color: #04202e;
+}
