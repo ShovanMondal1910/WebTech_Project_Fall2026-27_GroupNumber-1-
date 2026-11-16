@@ -150,3 +150,19 @@ input[type="submit"]:hover {
     color: #3fe0c5;
     background-color: #04202e;
 }
+
+.show-password {
+    margin-top: 8px;
+}
+
+.show-password input[type="checkbox"] {
+    margin: 0 6px 0 2px;
+    accent-color: #00030f;
+    cursor: pointer;
+}
+
+.show-password label {
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+}

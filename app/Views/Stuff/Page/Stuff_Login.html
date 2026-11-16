@@ -13,45 +13,50 @@
 
     <!-- Back button (to Home page) -->
     <a href="../../index.html">
-        <button type="button" id="back">Back</button>
+        <button type="button" id="back">Home</button>
     </a>
 
     <!-- Logo and heading -->
     <img src="../../design/images/logo.png" id="logo" alt="Logo">
     <br>
     <h1>Stuff Login</h1>
+    
+  <form id="loginForm" action="" method="post">
 
-    <!-- Login form -->
-    <form id="loginForm" action="" method="post">
+    <fieldset>
+        <legend> Login Information </legend>
+        <table>
+            <tr>
+                <td><label for="username"> User Name : </label></td>
+                <td>
+                    <input type="text" name="username" id="username" placeholder="Enter username">
+                    <p id="UsernameError"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password"> Password : </label></td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
 
-        <fieldset>
-            <legend> Login Information </legend>
-            <table>
-                <tr>
-                    <td><label for="username"> User Name : </label></td>
-                    <td>
-                        <input type="text" name="username" id="username" placeholder="Enter username">
-                        <p id="UsernameError"></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="password"> Password : </label></td>
-                    <td>
-                        <input type="password" name="password" id="password" placeholder="Enter password">
-                        <p id="PasswordError"></p>
-                    </td>
-                </tr>
-            </table>
-            <p id="LoginError"></p>
-        </fieldset>
-        <br>
+                    <div class="show-password">
+                        <input type="checkbox" id="showPassword">
+                        <label for="showPassword"> Show Password </label>
+                    </div>
 
-        <!-- Login button -->
-        <div class="button-group">
-            <input type="submit" id="login" value="Login">
-        </div>
+                    <p id="PasswordError"></p>
+                </td>
+            </tr>
+        </table>
+        <p id="LoginError"></p>
+    </fieldset>
+    <br>
 
-    </form>
+    <!-- Login button -->
+    <div class="button-group">
+        <input type="submit" id="login" value="Login">
+    </div>
+
+  </form>
 
     <!-- Link for new user -->
     <div class="register-text">

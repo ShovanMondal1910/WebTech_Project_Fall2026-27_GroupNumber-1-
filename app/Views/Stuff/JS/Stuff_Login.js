@@ -59,8 +59,21 @@ function check_login() {
     }
 }
 
+function toggle_password() {
+    let password = document.getElementById("password");
+    let checkbox = document.getElementById("showPassword");
+
+    if (checkbox.checked) {
+        password.type = "text";
+    }
+    else {
+        password.type = "password";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     let form = document.getElementById("loginForm");
+    document.getElementById("showPassword").addEventListener("change", toggle_password);
 
     form.addEventListener("submit", function (event) {
         event.preventDefault();
