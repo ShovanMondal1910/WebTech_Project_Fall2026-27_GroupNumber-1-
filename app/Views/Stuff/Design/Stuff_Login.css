@@ -120,11 +120,13 @@ input[type="submit"]:hover {
 
 .register-text {
     text-align: center;
+    font-size: 15px;
     margin-top: 25px;
 }
 
 .register-text a {
     color: #0e5a63;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
 }
