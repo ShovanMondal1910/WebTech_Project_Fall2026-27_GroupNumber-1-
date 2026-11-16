@@ -35,7 +35,7 @@
                 <tr>
                     <td><label for="doctorName">Doctor Name :</label></td>
                     <td>
-                        <input type="text" name="doctorName" id="doctorName" placeholder="Enter Doctor Full Name">
+                        <input type="text" name="doctorName" id="doctorName" placeholder="Enter Doctor Full Name" readonly>
                         <p id="DoctorNameError" class="Errors"></p>
                     </td>
                 </tr>
@@ -43,7 +43,7 @@
                 <tr>
                     <td><label for="dob">Date of Birth :</label></td>
                     <td>
-                        <input type="date" name="dob" id="dob">
+                        <input type="date" name="dob" id="dob" readonly>
                         <p id="DobError" class="Errors"></p>
                     </td>
                 </tr>
@@ -176,37 +176,6 @@
                         <input type="number" name="consultationFee" id="consultationFee"
                             placeholder="Enter Consultation Fee (e.g., 800)" min="0">
                         <p id="FeeError" class="Errors"></p>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-        <br>
-
-        <fieldset>
-            <legend>Doctor Account Credentials</legend>
-            <table>
-                <tr>
-                    <td><label for="username">Username :</label></td>
-                    <td>
-                        <input type="text" name="username" id="username" placeholder="Choose a username">
-                        <p id="UsernameError" class="Errors"></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="password">Password :</label></td>
-                    <td>
-                        <input type="password" name="password" id="password" placeholder="Enter user password">
-                        <p id="PasswordError" class="Errors"></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="confirmPassword">Confirm Password :</label></td>
-                    <td>
-                        <input type="password" name="confirmPassword" id="confirmPassword"
-                            placeholder="Re-enter password">
-                        <p id="ConfirmPasswordError" class="Errors"></p>
                     </td>
                 </tr>
             </table>
