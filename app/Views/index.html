@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design/css/index.css">
     <link rel="stylesheet" href="design/css/navbar.css">
+    <script src="script.js"></script>
     <title>Pharmacy Management System</title>
 </head>
 <body>
@@ -14,9 +15,8 @@
     <!-- Content frame below navbar -->
     <iframe name="contentFrame" id="contentFrame" style="width: 100%; height: 85vh; border: none; display: none;"></iframe>
 
-    <!-- Default home content (hidden when a page is opened in the iframe) -->
+    
     <div id="home-content">
-        <!-- logo and header  -->
         <img src="design/images/logo1.png" id="logo" alt="Pharmacy Logo">
         <div class="header">
             <h1>Pharmacy Management System</h1>
@@ -27,45 +27,5 @@
             <h5>Created by Shovan,Nishat,Redip,Abdullah</h5>
         </div>
     </div>
-
-    <script>
-        // Prevent nesting: if index.html is ever loaded inside an iframe, break out to top window
-        if (window.self !== window.top) {
-            window.top.location.href = window.location.href;
-        }
-
-        // Fetch and load the navbar
-        fetch('layouts/navbar.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-            })
-            .catch(err => console.error('Error loading navbar:', err));
-
-        // Switch between home view and content frame
-        document.addEventListener('click', function(e) {
-            const link = e.target.closest('a');
-            if (!link) return;
-
-            const target = link.getAttribute('target');
-            const href = link.getAttribute('href');
-
-            if (target === 'contentFrame') {
-                const frame = document.getElementById('contentFrame');
-                const home = document.getElementById('home-content');
-                if (frame) frame.style.display = 'block';
-                if (home) home.style.display = 'none';
-            } else if (href === 'index.html' || href === '../index.html' || href === '../../index.html') {
-                e.preventDefault();
-                const frame = document.getElementById('contentFrame');
-                const home = document.getElementById('home-content');
-                if (frame) {
-                    frame.style.display = 'none';
-                    frame.src = 'about:blank';
-                }
-                if (home) home.style.display = 'block';
-            }
-        });
-    </script>
 </body>
 </html>
