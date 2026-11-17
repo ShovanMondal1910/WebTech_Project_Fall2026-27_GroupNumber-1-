@@ -1,1 +1,0 @@
-﻿-- Database Schema for Pharmacy Management System
