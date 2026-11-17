@@ -23,7 +23,7 @@ body{
 h1{
     text-align: center;
     color: darkgreen;
-    border: 1px solid silver;
+    border: 2px solid darkgreen;
     padding-bottom: 13px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -31,7 +31,7 @@ h1{
 }
 fieldset{
     background-color: solid silver;
-    border: 1px solid darkgreen;
+    border: 2px solid darkgreen;
     border-radius: 10px;
     padding: 22px;
     margin-bottom: 18px;
@@ -106,13 +106,15 @@ input[type="checkbox"]{
 
 .button-group{
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     margin-top: 15px;
 }
 
 input[type="submit"],
 input[type="reset"]{
-    width: 100%;
+    width: 250px;
     box-sizing: border-box;
     flex: 1;
     padding: 13px 20px;

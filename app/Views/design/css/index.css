@@ -92,7 +92,7 @@ body {
 .doctor .header,   .doctor legend,   .doctor #submit,   .doctor .user-btn   { background-color: #0f6e6e; }
 .stuff .header,    .stuff legend,    .stuff #submit,    .stuff .user-btn,
 .nurse .header,    .nurse legend,    .nurse #submit,    .nurse .user-btn    { background-color: #650505; }
-.customer .header, .customer legend, .customer #submit, .customer .user-btn { background-color: #008f32; }
+.customer .header, .customer legend, .customer #submit, .customer .user-btn { background-color: rgb(93, 202, 93); }
 
 /* ---------- Index page cards ---------- */
 .user-grid {
