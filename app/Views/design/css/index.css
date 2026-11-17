@@ -92,8 +92,7 @@ body {
 .doctor .header,   .doctor legend,   .doctor #submit,   .doctor .user-btn   { background-color: #0f6e6e; }
 .stuff .header,    .stuff legend,    .stuff #submit,    .stuff .user-btn,
 .nurse .header,    .nurse legend,    .nurse #submit,    .nurse .user-btn    { background-color: #6a3d8f; }
-.customer .header, .customer legend, .customer #submit, .customer .user-btn,
-.patient .header,  .patient legend,  .patient #submit,  .patient .user-btn  { background-color: #a4541c; }
+.customer .header, .customer legend, .customer #submit, .customer .user-btn { background-color: #008f32; }
 
 /* ---------- Index page cards ---------- */
 .user-grid {
@@ -141,7 +140,7 @@ body {
 .user-card.doctor   { border-top-color: #0f6e6e; }
 .user-card.stuff    { border-top-color: #6a3d8f; }
 .user-card.nurse    { border-top-color: #6a3d8f; }
-.user-card.customer { border-top-color: #a4541c; }
+.user-card.customer { border-top-color: #57d98b; }
 .user-card.patient  { border-top-color: #a4541c; }
 
 /* Anchor wrapper around button */
