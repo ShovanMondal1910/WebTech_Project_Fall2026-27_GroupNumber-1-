@@ -29,11 +29,11 @@ function validateCustomerName()
     let Error = document.getElementById("CustomerNameError");
 
     if(cName==""){
-        Error.innerHTML= "Please Enter Customer Name";
+        Error.innerHTML= "Please Enter Your Name";
         return false;
     }
     else if(cName.length < 3){
-        Error.innerHTML= "Customer Name must be at least 3 characters";
+        Error.innerHTML= "Your Name must be at least 3 characters";
         return false;
     }
     else
@@ -152,7 +152,7 @@ function validateCitizenship() {
     let citizenship = document.getElementById("Citizen").value;
     let Error = document.getElementById("citizenError");
 
-    if (citizenship == "") 
+    if (citizenship === "") 
     {
         Error.innerHTML = "Please select your citizenship";
         return false;
