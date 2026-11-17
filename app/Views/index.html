@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design/css/index.css">
-    <link rel="stylesheet" href="design/css/navbar.css">
-    <title>Pharmacy Management System</title>
-</head>
-<body>
-    <!-- importing navbar  -->
-    <div id="navbar-placeholder"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hospital Management System</title>
+        <link rel="stylesheet" href="design/css/index.css">
+        <script src="JS/Index.js"></script>
+    </head>
 
-    <!-- Content frame below navbar -->
-    <iframe name="contentFrame" id="contentFrame" style="width: 100%; height: 85vh; border: none; display: none;"></iframe>
+    <body>
+        <!-- System Logo -->
+        <img src="design/images/logo.png" id="logo" alt="Hospital Management System Logo">
 
-    <!-- Default home content (hidden when a page is opened in the iframe) -->
-    <div id="home-content">
-        <!-- logo and header  -->
-        <img src="design/images/logo1.png" id="logo" alt="Pharmacy Logo">
         <div class="header">
-            <h1>Pharmacy Management System</h1>
-            <p>Choose user type</p>
+            <h1>Hospital Management System</h1>
+            <p>Choose a user type to open its registration form</p>
         </div>
-        
+
+        <!-- Four users: Admin, Doctor, Stuff, Customer -->
+        <div class="user-grid">
+
+            <div class="user-card admin">
+                <h2>Admin</h2>
+                <p>Manages doctors, staff, customers, and system records.</p>
+                <a href="admin/adminreg.html">
+                    <button type="button" class="user-btn" onclick="goToRegistration('admin')">Admin Registration</button>
+                </a>
+            </div>
+
+            <div class="user-card doctor">
+                <h2>Doctor</h2>
+                <p>Registers with specialization, schedule, and qualifications.</p>
+                <a href="auth/index.html">
+                    <button type="button" class="user-btn" onclick="goToRegistration('doctor')">Doctor Registration</button>
+                </a>
+            </div>
+
+            <div class="user-card stuff">
+                <h2>Stuff</h2>
+                <p>Registers with department, role, shift, and qualifications.</p>
+                <a href="Stuff/Page/Stuff_Login.html">
+                    <button type="button" class="user-btn" onclick="goToRegistration('stuff')">Stuff Registration</button>
+                </a>
+            </div>
+
+            <div class="user-card customer">
+                <h2>Customer</h2>
+                <p>Registers with personal details, contact, and medical profile.</p>
+                <a href="customer/AddCustomer.html">
+                    <button type="button" class="user-btn" onclick="goToRegistration('customer')">Customer Registration</button>
+                </a>
+            </div>
+
+        </div>
+
         <div class="footer">
-            <h5>Created by Shovan,Nishat,Redip,Abdullah</h5>
+            <h5>Hospital Management System &bull; Group 1</h5>
         </div>
-    </div>
-
-    <script>
-        // Prevent nesting: if index.html is ever loaded inside an iframe, break out to top window
-        if (window.self !== window.top) {
-            window.top.location.href = window.location.href;
-        }
-
-        // Fetch and load the navbar
-        fetch('layouts/navbar.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-            })
-            .catch(err => console.error('Error loading navbar:', err));
-
-        // Switch between home view and content frame
-        document.addEventListener('click', function(e) {
-            const link = e.target.closest('a');
-            if (!link) return;
-
-            const target = link.getAttribute('target');
-            const href = link.getAttribute('href');
-
-            if (target === 'contentFrame') {
-                const frame = document.getElementById('contentFrame');
-                const home = document.getElementById('home-content');
-                if (frame) frame.style.display = 'block';
-                if (home) home.style.display = 'none';
-            } else if (href === 'index.html' || href === '../index.html' || href === '../../index.html') {
-                e.preventDefault();
-                const frame = document.getElementById('contentFrame');
-                const home = document.getElementById('home-content');
-                if (frame) {
-                    frame.style.display = 'none';
-                    frame.src = 'about:blank';
-                }
-                if (home) home.style.display = 'block';
-            }
-        });
-    </script>
-</body>
+    </body>
 </html>
