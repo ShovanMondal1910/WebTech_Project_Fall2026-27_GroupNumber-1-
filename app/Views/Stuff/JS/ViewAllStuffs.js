@@ -55,7 +55,6 @@ function confirm_delete(event) {
     let sure = confirm("Are you sure you want to delete this stuff?");
 
     if (sure) {
-        // later (with PHP) this will go to the delete page, for now the row is removed from the table
         let row = event.target.parentNode.parentNode;
         row.parentNode.removeChild(row);
     }
