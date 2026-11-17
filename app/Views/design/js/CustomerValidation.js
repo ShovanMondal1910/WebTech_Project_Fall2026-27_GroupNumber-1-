@@ -7,9 +7,9 @@ function collect_customer_data()
     let validAddress = validateAddress();
     let validFile = validateFile();
     let validCitizenship = validateCitizenship();
-    // let validUsername = validateUsername();
-    // let validEmail = validateEmail();
-    // let validPassword = validatePassword();
+    let validUsername = validateUsername();
+    let validEmail = validateEmail();
+    let validPassword = validatePassword();
 
 
 
@@ -19,7 +19,10 @@ function collect_customer_data()
      validCustomerPhone &&
      validAddress &&
      validFile &&
-     validCitizenship;
+     validCitizenship &&
+     validUsername &&
+     validEmail &&
+     validPassword;
 }
 
 function validateCustomerName()
@@ -148,13 +151,96 @@ function validateFile()
 
 }
 
-function validateCitizenship() {
+function validateCitizenship()
+ {
     let citizenship = document.getElementById("Citizen").value;
     let Error = document.getElementById("citizenError");
 
     if (citizenship === "") 
     {
         Error.innerHTML = "Please select your citizenship";
+        return false;
+    }
+    else
+    {
+        Error.innerHTML = "";
+        return true;
+    }
+}
+
+
+function validateUsername()
+{
+    let username = document.getElementById("username").value.trim();
+    let Error = document.getElementById("usernameError");
+
+    if(username=="")
+    {
+        Error.innerHTML = "Please Enter Username";
+        return false;
+    }   
+    else if(username.length < 5)
+    {
+        Error.innerHTML = "Username must be at least 5 characters long";
+        return false;
+    }  
+    else
+    {
+        Error.innerHTML = "";
+        return true;
+    }     
+}
+
+function validateEmail()
+{
+    let email = document.getElementById("email").value.trim();
+    let Error = document.getElementById("emailError");
+
+    if(email=="")
+    {
+        Error.innerHTML = "Please Enter Email";
+        return false;
+    }
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+    {
+        Error.innerHTML = "Please enter a valid email address";
+        return false;
+    }
+    else
+    {
+        Error.innerHTML = "";
+        return true;
+    }
+}
+
+function validatePassword()
+{
+    let password = document.getElementById("password").value.trim();
+    let Error = document.getElementById("passwordError");
+
+    if(password=="")
+    {
+        Error.innerHTML = "Please Enter Password";
+        return false;
+    }
+    else if(password.length < 6 )
+    {
+        Error.innerHTML = "Password must be at least 6 characters long";
+        return false;
+    }
+    else if(!/[A-Z]/.test(password))
+    {
+        Error.innerHTML = "Password must contain at least one uppercase letter";
+        return false;
+    }
+    else if(!/[0-9]/.test(password))
+    {
+        Error.innerHTML = "Password must contain at least one number";
+        return false;
+    }
+    else if(!/[!@#$%^&*(),.?":{}|<>]/.test(password))
+    {
+        Error.innerHTML = "Password must contain at least one special character";
         return false;
     }
     else

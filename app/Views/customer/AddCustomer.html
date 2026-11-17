@@ -69,25 +69,25 @@
                     <td><label for="Citizen"> Citizenship : </label> </td>
                     <td>
                         <select name="Citizen" id="Citizen" for="Citizen">
-                            <option id="blank"> Select Country </option>
-                            <option id="BD"> Bangladesh </option>
-                            <option id="IND"> India </option>
-                            <option id="PAK"> Pakistan </option>
-                            <option id="USA"> USA </option>
-                            <option id ="UK"> UK </option>
-                            <option id="AUS"> Australia </option>
-                            <option id="JP"> Japan </option>
-                            <option id="CN"> China </option>
-                            <option id="MB"> Myanmar </option>
-                            <option id="SA"> Saudi Arabia </option>
-                            <option id="SG"> Singapore </option>
-                            <option id="TH"> Thailand </option>
-                            <option id="CA"> Canada </option>
-                            <option id="FR"> France </option>
-                            <option id="DE"> Germany </option>
-                            <option id="KR"> South Korea </option>
-                            <option id="MAL"> Malaysia </option>
-                            <option id="UAE"> UAE </option>
+                            <option value=""> Select Country </option>
+                            <option value="BD"> Bangladesh </option>
+                            <option value="IND"> India </option>
+                            <option value="PAK"> Pakistan </option>
+                            <option value="USA"> USA </option>
+                            <option value ="UK"> UK </option>
+                            <option value="AUS"> Australia </option>
+                            <option value="JP"> Japan </option>
+                            <option value="CN"> China </option>
+                            <option value="MB"> Myanmar </option>
+                            <option value="SA"> Saudi Arabia </option>
+                            <option value="SG"> Singapore </option>
+                            <option value="TH"> Thailand </option>
+                            <option value="CA"> Canada </option>
+                            <option value="FR"> France </option>
+                            <option value="DE"> Germany </option>
+                            <option value="KR"> South Korea </option>
+                            <option value="MAL"> Malaysia </option>
+                            <option value="UAE"> UAE </option>
                         </select>
                     
                     <p id="citizenError" class="Errors"></p>
@@ -101,15 +101,24 @@
                 <table>
                     <tr>
                         <td> <label for="username"> Username: </label> </td>
-                        <td> <input type="text" id="username" for="username" placeholder="Enter username"> </td>
+                        <td> <input type="text" id="username" for="username" placeholder="Enter username">
+                        
+                         <p id="usernameError" class="Errors"></p>
+                        </td>
                     </tr>
                     <tr>
                         <td>  <label for="email"> Email : </label> </td>
-                        <td> <input type="email" name="email" id="email" for="email" placeholder="Enter Your Email "> </td>
+                        <td> <input type="email" name="email" id="email" for="email" placeholder="Enter Your Email "> 
+                        
+                        <p id="emailError" class="Errors"></p>
+                        </td>
                     </tr>
                     <tr>
                         <td> <label for="password"> Password: </label></td>
-                        <td> <input type="password" id="password" for="password" placeholder="Enter user password"></td>
+                        <td> <input type="password" id="password" for="password" placeholder="Enter user password">
+                        
+                        <p id="passwordError" class="Errors"></p>
+                        </td>
 
                     </tr>
                 </table>
