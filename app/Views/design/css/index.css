@@ -1,3 +1,5 @@
+/* ============ Shared stylesheet for index.html and all 4 registration pages ============ */
+
 * {
     box-sizing: border-box;
 }
@@ -6,60 +8,171 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
     color: #1d2733;
-    background-color: bisque;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px;
-}
-
-#home-content {
+    background-color: #eef3f8;
     max-width: 800px;
     margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-    display: block;
+    padding: 30px 20px;
 }
 
 #logo {
     display: block;
-    width: 300px;
-    height: 150px;
-    margin: 0 auto;
-    border-radius: 15px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* ---------- Header, navigation, footer ---------- */
 .header {
     text-align: center;
     color: white;
-    padding: 14px;
-    margin: 10px 0;
-    background-color: black;
-    border-radius: 10px;
+    padding: 16px;
+    margin: 10px 0 20px 0;
+    background-color: #111827;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .header p {
     margin: 6px 0 0 0;
     color: #dfe6ee;
+    font-size: 15px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: gray;
+    margin: 10px 0 20px 0;
+    border-radius: 6px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #555;
+}
+
+.topnav a.active {
+    background-color: black;
 }
 
 .footer {
-    background-color: gray;
+    background-color: #374151;
     color: white;
     text-align: center;
-    font-size: 20px;
-    padding: 4px;
-    margin-top: 20px;
+    padding: 8px;
+    margin-top: 25px;
     border-radius: 6px;
 }
 
 .footer h5 {
-    margin: 8px 0;
+    margin: 6px 0;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- One colour per user (Admin, Doctor, Stuff, Customer) ----------
+   The class on <body> (registration pages) or on the card (index page)
+   decides the colour of the header, legends, submit button and user button. */
+.admin .header,    .admin legend,    .admin #submit,    .admin .user-btn    { background-color: #1f3a5f; }
+.doctor .header,   .doctor legend,   .doctor #submit,   .doctor .user-btn   { background-color: #0f6e6e; }
+.stuff .header,    .stuff legend,    .stuff #submit,    .stuff .user-btn,
+.nurse .header,    .nurse legend,    .nurse #submit,    .nurse .user-btn    { background-color: #6a3d8f; }
+.customer .header, .customer legend, .customer #submit, .customer .user-btn,
+.patient .header,  .patient legend,  .patient #submit,  .patient .user-btn  { background-color: #a4541c; }
+
+/* ---------- Index page cards ---------- */
+.user-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.user-card {
+    flex: 1 1 calc(50% - 18px);
+    min-width: 260px;
+    background-color: white;
+    border: 1px solid #c9d3de;
+    border-top: 6px solid gray;
+    border-radius: 8px;
+    padding: 22px 20px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h2 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+.user-card p {
+    color: #4a5868;
+    margin: 0 0 18px 0;
+    font-size: 14.5px;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+/* Specific border top colors for each of the 4 user types */
+.user-card.admin    { border-top-color: #1f3a5f; }
+.user-card.doctor   { border-top-color: #0f6e6e; }
+.user-card.stuff    { border-top-color: #6a3d8f; }
+.user-card.nurse    { border-top-color: #6a3d8f; }
+.user-card.customer { border-top-color: #a4541c; }
+.user-card.patient  { border-top-color: #a4541c; }
+
+/* Anchor wrapper around button */
+.user-card a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.user-btn {
+    width: 100%;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.user-btn:hover {
+    opacity: 0.88;
+}
+
+.user-btn:active {
+    transform: scale(0.98);
+}
+
+
+.user-btn:active {
+    transform: scale(0.98);
 }
