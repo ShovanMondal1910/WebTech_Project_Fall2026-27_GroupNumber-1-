@@ -7,9 +7,14 @@ body {
     font-size: 16px;
     color: #1d2733;
     background-color: bisque;
-    max-width: 760px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 15px 20px;
+}
+
+#home-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 a {
