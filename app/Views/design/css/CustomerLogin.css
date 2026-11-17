@@ -1,0 +1,26 @@
+form{
+    position:relative;
+}
+#submit
+{
+    position:absolute;
+    right:4%;
+    bottom:15px;
+    float:right;
+    width:auto;
+    flex:none;
+    margin-top: -80px;
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    cursor: pointer;
+    color:white;
+    border-color: darkseagreen;
+    box-shadow: 0 4px 12px rgba(30, 65, 48, 0.2); 
+}
+
+#submit:hover
+{
+    background-color: darkseagreen;
+    color:darkgreen;
+    box-shadow: 0 4px 12px rgba(30, 65, 48, 0.2);
+}
