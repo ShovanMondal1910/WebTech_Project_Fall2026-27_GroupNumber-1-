@@ -15,8 +15,8 @@
         <a href="Stuff_Registration.html" class="active">Stuff Registration</a>
     </div>
 
-    <a href="../../index.html">
-        <button type="button" id="back">Back</button>
+    <a href="../../index.html" target="_top">
+        <button type="button" id="back">Home</button>
     </a>
 
     <img src="../../design/images/logo.png" id="logo" alt="Logo">
@@ -144,6 +144,12 @@
                     <td><label for="confirmPassword"> Confirm Password : </label></td>
                     <td>
                         <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter password again">
+
+                        <div class="show-password">
+                            <input type="checkbox" id="showPassword">
+                            <label for="showPassword"> Show Password </label>
+                        </div>
+
                         <p id="ConfirmPasswordError"></p>
                     </td>
                 </tr>

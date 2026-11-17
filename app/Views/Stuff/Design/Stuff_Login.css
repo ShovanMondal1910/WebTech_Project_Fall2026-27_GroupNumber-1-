@@ -120,11 +120,13 @@ input[type="submit"]:hover {
 
 .register-text {
     text-align: center;
+    font-size: 15px;
     margin-top: 25px;
 }
 
 .register-text a {
     color: #0e5a63;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -149,4 +151,20 @@ input[type="submit"]:hover {
 #back:hover {
     color: #3fe0c5;
     background-color: #04202e;
+}
+
+.show-password {
+    margin-top: 8px;
+}
+
+.show-password input[type="checkbox"] {
+    margin: 0 6px 0 2px;
+    accent-color: #00030f;
+    cursor: pointer;
+}
+
+.show-password label {
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
 }

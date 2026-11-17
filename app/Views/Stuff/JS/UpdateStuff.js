@@ -1,4 +1,3 @@
-// Temporary demo data 
 let stuffList = [
     { id: "1", name: "Rahim Uddin", dob: "1998-04-12", gender: "Male", phone: "01700000000", department: "Pharmacy", designation: "Pharmacist", shift: ["Morning"], salary: "30000" },
     { id: "2", name: "Karim Hossain", dob: "2000-08-25", gender: "Male", phone: "01800000000", department: "Sales", designation: "Assistant", shift: ["Evening", "Night"], salary: "18000" },

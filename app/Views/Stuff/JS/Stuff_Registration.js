@@ -288,8 +288,25 @@ function clear_messages() {
     }
 }
 
+function toggle_password() {
+    let password = document.getElementById("password");
+    let confirmPassword = document.getElementById("confirmPassword");
+    let checkbox = document.getElementById("showPassword");
+
+    if (checkbox.checked) {
+        password.type = "text";
+        confirmPassword.type = "text";
+    }
+    else {
+        password.type = "password";
+        confirmPassword.type = "password";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     let form = document.getElementById("stuffForm");
+
+    document.getElementById("showPassword").addEventListener("change", toggle_password);
 
     form.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -301,5 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("reset", function () {
         clear_messages();
+        document.getElementById("password").type = "password";
+        document.getElementById("confirmPassword").type = "password";
     });
 });

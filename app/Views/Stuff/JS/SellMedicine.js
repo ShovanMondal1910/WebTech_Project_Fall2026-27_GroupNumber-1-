@@ -1,4 +1,3 @@
-// Temporary demo data (later this will come from the database with PHP)
 let medicineList = [
     { id: "1", name: "Napa 500mg", price: 2, stock: 200 },
     { id: "2", name: "Seclo 20mg", price: 7, stock: 120 },
@@ -8,7 +7,6 @@ let medicineList = [
     { id: "6", name: "Ciprocin 500mg", price: 15, stock: 40 }
 ];
 
-// It becomes true only after Count Total is done successfully
 let totalCounted = false;
 
 function find_medicine(id) {
@@ -19,8 +17,6 @@ function find_medicine(id) {
     }
     return null;
 }
-
-// Put all demo medicines in the select box
 function fill_medicine_list() {
     let select = document.getElementById("medicine");
 
@@ -32,7 +28,6 @@ function fill_medicine_list() {
     }
 }
 
-// Show price and stock of the selected medicine
 function show_medicine_details() {
     let medicine = find_medicine(document.getElementById("medicine").value);
 
@@ -103,7 +98,6 @@ function validate_quantity() {
     }
 }
 
-// Count Total button: price x quantity
 function count_total() {
     clear_bill_message();
 
@@ -122,7 +116,6 @@ function count_total() {
     }
 }
 
-// Print Bill button: medicine must be selected and total must be counted
 function print_bill() {
     let message = document.getElementById("BillMessage");
     let medicine = find_medicine(document.getElementById("medicine").value);
@@ -133,11 +126,9 @@ function print_bill() {
         return false;
     }
     else {
-        // demo sell: reduce the stock of the demo data
         let quantity = Number(document.getElementById("quantity").value);
         medicine.stock = medicine.stock - quantity;
 
-        // get the form ready for the next sell
         document.getElementById("medicine").value = "blank";
         document.getElementById("quantity").value = "";
         show_medicine_details();
@@ -156,7 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fill_medicine_list();
 
-    // When medicine is changed, old total is not valid any more
     document.getElementById("medicine").addEventListener("change", function () {
         show_medicine_details();
         clear_total();
@@ -165,7 +155,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("QuantityError").innerHTML = "";
     });
 
-    // When quantity is changed, old total is not valid any more
     document.getElementById("quantity").addEventListener("input", function () {
         clear_total();
         clear_bill_message();

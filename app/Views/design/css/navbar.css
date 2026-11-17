@@ -13,11 +13,11 @@ body {
 /* ── Navbar ── */
 .navbar {
     padding: 8px 12px;
-    overflow: hiddenauto;
+    overflow: visible;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px 12px;
-    
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 6px;
+    margin-bottom: 12px;
 }
 
 .nav-links {
