@@ -16,11 +16,11 @@ body {
 
 #logo {
     display: block;
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 240px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 15px auto;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -89,7 +89,7 @@ body {
    The class on <body> (registration pages) or on the card (index page)
    decides the colour of the header, legends, submit button and user button. */
 .admin .header,    .admin legend,    .admin #submit,    .admin .user-btn    { background-color: #1f3a5f; }
-.doctor .header,   .doctor legend,   .doctor #submit,   .doctor .user-btn   { background-color: #0f6e6e; }
+.doctor .header,   .doctor legend,   .doctor #submit,   .doctor .user-btn   { background-color: #3358e8; }
 .stuff .header,    .stuff legend,    .stuff #submit,    .stuff .user-btn,
 .nurse .header,    .nurse legend,    .nurse #submit,    .nurse .user-btn    { background-color: #650505; }
 .customer .header, .customer legend, .customer #submit, .customer .user-btn { background-color: #008f32; }
@@ -135,7 +135,7 @@ body {
 
 /* Specific border top colors for each of the 4 user types */
 .user-card.admin    { border-top-color: #1f3a5f; }
-.user-card.doctor   { border-top-color: #0f6e6e; }
+.user-card.doctor   { border-top-color: #7054eb; }
 .user-card.stuff    { border-top-color: #ec1005; }
 .user-card.nurse    { border-top-color: #6a3d8f; }
 .user-card.customer { border-top-color: #57d98b; }
