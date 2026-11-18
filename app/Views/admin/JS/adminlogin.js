@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function ()
         {
             if (check_login())
             {
-                window.location.href = "admin.html";
+                window.location.href = "adminreg.html";
             }
         }
     });

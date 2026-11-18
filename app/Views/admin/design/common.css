@@ -32,7 +32,8 @@ body
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#logo:hover {
+#logo:hover
+{
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 16px 38px rgba(0, 150, 150, 0.45);
 }
