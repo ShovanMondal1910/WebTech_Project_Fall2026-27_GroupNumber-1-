@@ -203,6 +203,12 @@
 
     </form>
 
+    <div style="text-align: center; margin-top: 16px;">
+        <span>Already have an account? <a href="login.php">Login</a></span>
+        &nbsp;|&nbsp;
+        <span><a href="doctor_dashboard.php">Back to Dashboard</a></span>
+    </div>
+
 </body>
 
 </html>

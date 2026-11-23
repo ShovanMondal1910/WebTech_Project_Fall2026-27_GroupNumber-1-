@@ -190,6 +190,11 @@
         </div>
 
     </form>
+
+    <div style="text-align: center; margin-top: 16px;">
+        <a href="doctor_dashboard.php">Back to Dashboard</a>
+    </div>
+
 </body>
 
 </html>

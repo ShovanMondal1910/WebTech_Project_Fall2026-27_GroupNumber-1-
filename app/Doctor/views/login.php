@@ -24,7 +24,7 @@
                     <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
                 </tr>
                 <tr>
-                    <td><a href="forget_password.html">forget password?</a></td>
+                    <td><a href="forget_password.php">Forgot password?</a></td>
                 </tr>
             </table>
             <p id="loginError"></p>
@@ -35,11 +35,9 @@
             <input type="reset" id="reset" value="Reset">
         </div>
         <br>
-
-        <!-- <div style="text-align: center;">
-            <span>New Here? <a href="add_doctor.html">Create an Account</a></span>
-        </div> -->
-
+        <div style="text-align: center;">
+            <span>New Here? <a href="add_doctor.php">Create an Account</a></span>
+        </div>
     </form>
 </body>
 </html>
