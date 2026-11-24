@@ -36,13 +36,26 @@ nav a:hover{
 }
 
 .welcome-section{
+    width:100%;
+    min-height: 290px;
     text-align: center;
-    padding: 65px 7%;
+    padding: 55px 7%;
     background-color: #e3f2e8;
+    background-image: url('../customer/images/CustomerHome/welcome-bg.png');
+    background-repeat: no-repeat;
+    
+    background-size: auto 100%;
+    background-position: rightcenter;
 
 }
 
 .welcome-section h1{
+    color: darkgreen;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.welcome-section p{
     font-size: 18px;
     margin-bottom: 25px;
 }
@@ -119,5 +132,37 @@ nav a:hover{
 .category h3{
     color: darkgreen;
     font-size: 17px;
+}
+
+@media (max-width: 750px) {
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .category-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome-section h1{
+       font-size: 28px;
+    }
+}
+
+@media (max-width: 450px) {
+    .category-list{
+        grid-template-columns: 1fr;
+    }
+
+    #logo{
+        width: 170px;
+        
+    }
 }
 
