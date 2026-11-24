@@ -78,3 +78,21 @@ nav a:hover{
 .search-box button:hover{
     background-color: darkgreen;
 }
+
+.content-section{
+    padding: 40px 5%;
+}
+
+.content-section h2{
+    text-align: center;
+    color:darkgreen
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.category-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    
+}
