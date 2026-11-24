@@ -54,10 +54,12 @@ nav a.active{
     color: white;
 }
 
-nav a:hover{
+nav a:not(.active):hover{
     text-decoration: none;
     color: seagreen;
 }
+
+
 
 .welcome-section{
     width:100%;
