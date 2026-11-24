@@ -1,0 +1,195 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: black;
+    background-color: rgb(213, 232, 248);
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    border: 1px solid;
+    padding: 13px;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+fieldset {
+    background-color: rgb(213, 232, 248);
+    border: 2px solid rgb(111, 40, 173);
+    border-radius: 50px;
+    padding: 25px;
+    margin: 5px;
+}
+
+legend {
+    background-color: rgb(225, 166, 93);
+    border: 2px solid black;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px 6px;
+    vertical-align: top;
+}
+
+#logo {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 90%;
+    padding: 8px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 40px;
+    text-align: center;
+    border-color: rgb(168, 66, 66);
+}
+
+textarea {
+    height: 110px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 10px 4px 0 10px;
+    accent-color: black;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    color: black;
+}
+
+input[type="reset"]:hover {
+    background-color: red;
+    color: black;
+}
+
+input[type="button"] {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(47, 1, 255);
+    height: 37px;
+    width: 100px;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(155, 208, 155);
+    color: black;
+}
+
+.Errors {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+}
+
+.action-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.action-card {
+    background-color: white;
+    border: 2px solid rgb(111, 40, 173);
+    border-radius: 20px;
+    padding: 30px 24px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 340px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(111, 40, 173, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.action-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(111, 40, 173, 0.28);
+}
+
+.action-card h3 {
+    color: rgb(111, 40, 173);
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.action-card p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.action-card a {
+    text-decoration: none;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 10px 28px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(111, 40, 173);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: rgb(225, 166, 93);
+    color: black;
+}

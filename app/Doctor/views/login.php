@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../design/css/style.css">
+    <link rel="stylesheet" href="../views/css/doctor.css">
     <title>Login</title>
-    <script src="login.js" defer></script>
+    <script src="../views/js/login.js" defer></script>
 </head>
 
 <body>
@@ -24,10 +24,7 @@
                     <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td style="text-align: right; font-size: 0.8em;">
-                        <a href="forgetpassword.html">Forgot password?</a>
-                    </td>
+                    <td><a href="forget_password.php">Forgot password?</a></td>
                 </tr>
             </table>
             <p id="loginError"></p>
@@ -38,9 +35,8 @@
             <input type="reset" id="reset" value="Reset">
         </div>
         <br>
-
         <div style="text-align: center;">
-            <span>New Here? <a href="signup.html">Create an Account</a></span>
+            <span>New Here? <a href="add_doctor.php">Create an Account</a></span>
         </div>
     </form>
 </body>

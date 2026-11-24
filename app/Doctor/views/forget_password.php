@@ -2,33 +2,29 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../design/css/style.css"> 
-        <title> Forget Password </title>
+        <link rel="stylesheet" href="../views/css/doctor.css">
+        <title>Forget Password</title>
     </head>
     <body>
-        <img src="../design/images/logo.png" id="logo" alt="Logo"> 
-        <br>
-
-        <h1> Forget Password </h1>
+        <h1>Forget Password</h1>
         <form action="" method="post">
             <fieldset>
-                <legend> User Info </legend>
+                <legend>User Info</legend>
                 <table>
                     <tr>
-                        <td> <label for="email"> Email: </label> </td>
-                        <td> <input type="email" id="email" name="email" placeholder="Enter your email" required> </td>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
                     </tr>
                 </table>
             </fieldset>
             <br>
-
             <div class="button-group">
                 <input type="submit" id="submit" value="Submit">
                 <input type="reset" id="reset" value="Reset">
             </div>
             <br>
             <div style="text-align: center;">
-                <span>Back to <a href="index.html">Login</a></span>
+                <span>Back to <a href="login.php">Login</a></span>
             </div>
         </form>
     </body>

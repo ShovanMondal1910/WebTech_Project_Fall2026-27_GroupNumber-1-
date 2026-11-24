@@ -4,40 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Doctor</title>
-    <link rel="stylesheet" href="../design/css/common.css">
-    <script src="../design/js/DoctorValidation.js"></script>
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="../views/css/doctor.css">
+    <script src="../views/js/add_doctor_validation.js" defer></script>
 </head>
 
 <body>
-    <h1>Update Doctor</h1>
+    <h1>Add Doctor</h1>
     <form id="doctorForm" action="" method="post" onsubmit="return collect_doctor_data()">
-
-        <fieldset>
-            <legend>Search Doctor</legend>
-            <table>
-                <tr>
-                    <td><label for="doctorID">Doctor ID :</label></td>
-                    <td>
-                        <input type="text" name="doctorID" id="doctorID" class="doctorID"
-                            placeholder="Enter DoctorID for search a doctor ">
-                        <p id="DoctorIDError" class="Errors"></p>
-                    </td>
-                    <td>
-                        <input type="button" id="searchBtn" name="searchBtn" value="Search" onclick="search_doctor()">
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-
         <fieldset>
             <legend>Doctor Personal Information</legend>
             <table>
                 <tr>
                     <td><label for="doctorName">Doctor Name :</label></td>
                     <td>
-                        <input type="text" name="doctorName" id="doctorName" placeholder="Enter Doctor Full Name"
-                            readonly>
+                        <input type="text" name="doctorName" id="doctorName" placeholder="Enter Doctor Full Name">
                         <p id="DoctorNameError" class="Errors"></p>
                     </td>
                 </tr>
@@ -45,7 +26,7 @@
                 <tr>
                     <td><label for="dob">Date of Birth :</label></td>
                     <td>
-                        <input type="date" name="dob" id="dob" readonly>
+                        <input type="date" name="dob" id="dob">
                         <p id="DobError" class="Errors"></p>
                     </td>
                 </tr>
@@ -173,7 +154,7 @@
                 </tr>
 
                 <tr>
-                    <td><label for="consultationFee">Consultation Fee (Tk):</label></td>
+                    <td><label for="consultationFee">Consultation Fee (Tk) :</label></td>
                     <td>
                         <input type="number" name="consultationFee" id="consultationFee"
                             placeholder="Enter Consultation Fee (e.g., 800)" min="0">
@@ -184,12 +165,50 @@
         </fieldset>
         <br>
 
+        <fieldset>
+            <legend>Doctor Account Credentials</legend>
+            <table>
+                <tr>
+                    <td><label for="username">Username :</label></td>
+                    <td>
+                        <input type="text" name="username" id="username" placeholder="Choose a username">
+                        <p id="UsernameError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password :</label></td>
+                    <td>
+                        <input type="password" name="password" id="password" placeholder="Enter user password">
+                        <p id="PasswordError" class="Errors"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="confirmPassword">Confirm Password :</label></td>
+                    <td>
+                        <input type="password" name="confirmPassword" id="confirmPassword"
+                            placeholder="Re-enter password">
+                        <p id="ConfirmPasswordError" class="Errors"></p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
         <div class="button-group">
-            <input type="submit" id="submit" value="Update Doctor">
+            <input type="submit" id="submit" value="Add Doctor">
             <input type="reset" id="reset" value="Reset">
         </div>
 
     </form>
+
+    <div style="text-align: center; margin-top: 16px;">
+        <span>Already have an account? <a href="login.php">Login</a></span>
+        &nbsp;|&nbsp;
+        <span><a href="doctor_dashboard.php">Back to Dashboard</a></span>
+    </div>
+
 </body>
 
 </html>
