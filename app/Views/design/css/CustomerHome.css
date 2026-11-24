@@ -104,4 +104,20 @@ nav a:hover{
     border:1px solid lightgray;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
 }
+
+.category:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.emoji{
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.category h3{
+    color: darkgreen;
+    font-size: 17px;
+}
+
