@@ -55,3 +55,26 @@ nav a:hover{
     outline: none;
     font-size: 15px;
 }
+
+.search-box input{
+    flex: 1;
+    padding: 14px;
+    border: 1px solid lightgray;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-box button{
+    padding: 14px 25px;
+    border: none;
+    background-color: seagreen;
+    color: white;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    
+}
+
+.search-box button:hover{
+    background-color: darkgreen;
+}
