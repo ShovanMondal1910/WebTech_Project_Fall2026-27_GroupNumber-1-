@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../views/css/doctor.css">
+    <title>Login</title>
+    <script src="../views/js/login.js" defer></script>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form onsubmit="return validateLogin()">
+        <fieldset>
+            <legend>User Login</legend>
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
+                </tr>
+                <tr>
+                    <td><a href="forget_password.php">Forgot password?</a></td>
+                </tr>
+            </table>
+            <p id="loginError"></p>
+        </fieldset>
+        <br>
+        <div class="button-group">
+            <input type="submit" id="submit" value="Login">
+            <input type="reset" id="reset" value="Reset">
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <span>New Here? <a href="add_doctor.php">Create an Account</a></span>
+        </div>
+    </form>
+</body>
+</html>
