@@ -11,41 +11,65 @@ body{
 }
 
 header{
+    width: 100%;
+    height: 80px;
     background-color: white;
-    padding: 15px 5%;
+    padding: 10px 4% 10px 1.5%;
     display: flex;
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.logo{
-    width: 210px;
-    height: 65px;
+#logo{
+    align-items: left;
+    object-position:left ;
+    max-height: 65px;
     object-fit: contain;
+    display: block;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
 }
 
 nav{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+nav a.active{
+    background-color:seagreen;
+    color: white;
 }
 
 nav a:hover{
-    color:seagreen;
+    text-decoration: none;
+    color: seagreen;
 }
 
 .welcome-section{
     width:100%;
     min-height: 290px;
-    text-align: center;
+    text-align: left;
     padding: 55px 7%;
     background-color: #e3f2e8;
-    background-image: url('../customer/images/CustomerHome/welcome-bg.png');
+    background-image: url('../../customer/images/CustomerHome.jpg');
     background-repeat: no-repeat;
     
-    background-size: auto 100%;
-    background-position: rightcenter;
+    background-size: cover;
+    background-position: right center;
 
 }
 
@@ -61,16 +85,13 @@ nav a:hover{
 }
 
 .search-box{
-    flex: 1;
-    padding: 14px;
-    border: 1px solid lightgray;
-    border-radius: 6px 0 0 6px;
-    outline: none;
-    font-size: 15px;
+    width: 550px;
+    display: flex;
 }
 
 .search-box input{
     flex: 1;
+    min-width: 0;
     padding: 14px;
     border: 1px solid lightgray;
     border-radius: 6px 0 0 6px;
@@ -98,8 +119,8 @@ nav a:hover{
 
 .content-section h2{
     text-align: center;
-    color:darkgreen
-    font-size: 28px;
+    color:darkgreen;
+    font-size:28px;
     margin-bottom: 25px;
 }
 
