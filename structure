@@ -48,7 +48,7 @@ Doctor:
     visitingDays,
     visitingHours,
     consultationFee
-    http://localhost/WebTech_Project_Fall2026-27_GroupNumber-1-/app/Doctor/views/login.php
+    http://localhost/WebTech_Project_Fall2026-27_GroupNumber-1-/app/
 Stuff:
     stuffId(PK),
     userId(FK),
