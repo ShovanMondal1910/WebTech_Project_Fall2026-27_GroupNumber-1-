@@ -12,10 +12,10 @@
 <body>
 
 <div class="topnav">
-    <a href="Stuff_Welcome.html">Stuff Panel</a>
-    <a href="ViewAllStuffs.html">View All Stuffs</a>
-    <a href="UpdateStuff.html">Update Stuff</a>
-    <a href="SellMedicine.html" class="active">Sell Medicine</a>
+    <a href="Stuff_Welcome.php">Stuff Panel</a>
+    <a href="ViewAllStuffs.php">View All Stuffs</a>
+    <a href="UpdateStuff.php">Update Stuff</a>
+    <a href="SellMedicine.php" class="active">Sell Medicine</a>
 </div>
 
     <img src="../../design/images/logo.png" id="logo" alt="Logo">

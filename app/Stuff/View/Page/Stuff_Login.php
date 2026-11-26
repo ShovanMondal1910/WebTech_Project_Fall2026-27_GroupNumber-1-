@@ -11,7 +11,7 @@
 
 <body>
 
-    <a href="../../index.html" target="_top">
+    <a href="../../index.php" target="_top">
         <button type="button" id="back">Home</button>
     </a>
 
@@ -56,7 +56,7 @@
   </form>
 
     <div class="register-text">
-        New user? <a href="Stuff_Registration.html">Register here</a>
+        New user? <a href="Stuff_Registration.php">Register here</a>
     </div>
 
 </body>
