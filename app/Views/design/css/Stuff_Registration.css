@@ -16,13 +16,6 @@ body {
 
 
 
-fieldset {
-    background-color: #ffffff;
-    border: 2px solid #0e5a63;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 5px;
-}
 
 legend {
     background-color: #0e5a63;
