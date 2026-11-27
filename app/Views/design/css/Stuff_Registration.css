@@ -8,24 +8,7 @@
 
 
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
 
-td {
-    padding: 8px 6px;
-    vertical-align: top;
-}
-
-td:first-child {
-    width: 30%;
-}
-
-label {
-    color: #0e5a63;
-    font-weight: bold;
-}
 
 input[type="text"],
 input[type="number"],
