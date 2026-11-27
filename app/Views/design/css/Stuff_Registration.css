@@ -20,21 +20,7 @@
 
 
 
-input[type="submit"] {
-    color: #04202e;
-    background-color: #1fb58a;
-}
 
-input[type="reset"] {
-    color: #ffffff;
-    background-color: #0e5a63;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    color: #3fe0c5;
-    background-color: #04202e;
-}
 
 #back {
     padding: 10px 25px;
