@@ -1,4 +1,4 @@
-// Navigation handler for user registration pages
+
 function goToRegistration(userType) {
     var routes = {
         'admin': 'admin/adminreg.html',
