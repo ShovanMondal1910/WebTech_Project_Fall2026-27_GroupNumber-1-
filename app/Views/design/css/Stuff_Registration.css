@@ -22,19 +22,3 @@
 
 
 
-#back {
-    padding: 10px 25px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #ffffff;
-    background-color: #0e5a63;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#back:hover {
-    color: #3fe0c5;
-    background-color: #04202e;
-}
