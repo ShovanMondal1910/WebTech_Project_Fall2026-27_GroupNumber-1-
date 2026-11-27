@@ -13,7 +13,7 @@ if (document.getElementById('navbar-placeholder')) {
         .catch(err => console.error('Error loading navbar:', err));
 }
 
-// Switch between home view and content frame
+
 document.addEventListener('click', function(e) {
     const link = e.target.closest('a');
     if (!link) return;
