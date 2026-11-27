@@ -5,7 +5,6 @@ function goToRegistration(userType) {
         'doctor': 'doctor/AddDoctor.html',
         'stuff': 'Stuff/Page/Stuff_Registration.html',
         'customer': 'customer/AddCustomer.html',
-        // Fallbacks
         'nurse': 'Stuff/Page/Stuff_Registration.html',
         'patient': 'customer/AddCustomer.html'
     };
