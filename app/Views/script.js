@@ -3,7 +3,7 @@ if (window.self !== window.top)
     window.top.location.href = window.location.href;
 }
 
-// Fetch and load the navbar if placeholder exists
+
 if (document.getElementById('navbar-placeholder')) {
     fetch('layouts/navbar.html')
         .then(res => res.text())
