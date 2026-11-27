@@ -14,15 +14,7 @@
 
 
 
-textarea {
-    resize: none;
-}
 
-input[type="radio"],
-input[type="checkbox"] {
-    margin: 10px 4px 0 10px;
-    accent-color: #1fb58a;
-}
 
 p {
     color: #d00000;
