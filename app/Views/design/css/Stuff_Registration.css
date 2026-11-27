@@ -12,14 +12,7 @@ body {
     padding: 30px 20px;
 }
 
-#logo {
-    display: block;
-    width: 320px;
-    height: auto;
-    margin: 0 auto;
-    border: 3px solid #1fb58a;
-    border-radius: 12px;
-}
+
 
 h1 {
     text-align: center;
